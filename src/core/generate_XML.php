@@ -14,23 +14,23 @@ function transformData($rates_data, $currencies_data)
     return $transformed_data;
 }
 
-function createXML($transformed_data, $meta)
+function createXML($transformed_data, $meta, $output_file)
 {
     $dom = new DOMDocument("1.0", "UTF-8");
     $root = $dom->createElement("rates");
     $dom->appendChild($root);
-    $root->setAttribute("last_updated_at", $meta["last_updated_at"]);
     $root->setAttribute("base", "GBP");
 
     foreach ($transformed_data as $currency) {
         $currency_element = $dom->createElement("Currency");
         $currency_element->appendChild($dom->createElement("code", $currency["code"]));
         $currency_element->setAttribute("rate", $currency["rate"]);
+        $currency_element->setAttribute("last_updated_at", $meta["last_updated_at"]);
         $currency_element->appendChild($dom->createElement("curr", $currency["curr"]));
         $currency_element->appendChild($dom->createElement("loc", $currency["loc"]));
 
         $root->appendChild($currency_element);
     }
 
-    return $dom->saveXML();
+    $dom->save($output_file);
 }

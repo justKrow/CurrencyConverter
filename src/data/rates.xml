@@ -1,922 +1,922 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rates last_updated_at="2024-01-30T23:59:59Z" base="GBP">
-    <Currency rate="2.4686021648">
+<rates base="GBP">
+    <Currency rate="2.5398445501" last_updated_at="2024-01-31T23:59:59Z">
         <code>ADA</code>
         <curr>Cardano</curr>
         <loc />
     </Currency>
-    <Currency rate="4.6623382331">
+    <Currency rate="4.6551275769" last_updated_at="2024-01-31T23:59:59Z">
         <code>AED</code>
         <curr>United Arab Emirates Dirham</curr>
         <loc>AE</loc>
     </Currency>
-    <Currency rate="96.0949885804">
+    <Currency rate="96.1041317385" last_updated_at="2024-01-31T23:59:59Z">
         <code>AFN</code>
         <curr>Afghan Afghani</curr>
         <loc>AF</loc>
     </Currency>
-    <Currency rate="121.2194652912">
+    <Currency rate="121.4487915991" last_updated_at="2024-01-31T23:59:59Z">
         <code>ALL</code>
         <curr>Albanian Lek</curr>
         <loc>AL</loc>
     </Currency>
-    <Currency rate="511.3087520387">
+    <Currency rate="511.3831133395" last_updated_at="2024-01-31T23:59:59Z">
         <code>AMD</code>
         <curr>Armenian Dram</curr>
         <loc>AM</loc>
     </Currency>
-    <Currency rate="2.2685024563">
+    <Currency rate="2.2651792906" last_updated_at="2024-01-31T23:59:59Z">
         <code>ANG</code>
         <curr>NL Antillean Guilder</curr>
         <loc>CW, SX</loc>
     </Currency>
-    <Currency rate="1051.5254421736">
+    <Currency rate="1054.2981789276" last_updated_at="2024-01-31T23:59:59Z">
         <code>AOA</code>
         <curr>Angolan Kwanza</curr>
         <loc>AO</loc>
     </Currency>
-    <Currency rate="0.6724218836">
+    <Currency rate="0.7166669435" last_updated_at="2024-01-31T23:59:59Z">
         <code>ARB</code>
         <curr>Arbitrum</curr>
         <loc />
     </Currency>
-    <Currency rate="1048.2654572009">
+    <Currency rate="1047.6782058229" last_updated_at="2024-01-31T23:59:59Z">
         <code>ARS</code>
         <curr>Argentine Peso</curr>
         <loc>AR</loc>
     </Currency>
-    <Currency rate="1.9245818797">
+    <Currency rate="1.9320446568" last_updated_at="2024-01-31T23:59:59Z">
         <code>AUD</code>
         <curr>Australian Dollar</curr>
         <loc>AU, CC, CX, HM, KI, NF, NR, TV</loc>
     </Currency>
-    <Currency rate="0.0360933272">
+    <Currency rate="0.0381439638" last_updated_at="2024-01-31T23:59:59Z">
         <code>AVAX</code>
         <curr>Avalanche</curr>
         <loc />
     </Currency>
-    <Currency rate="2.2723231212">
+    <Currency rate="2.2689817983" last_updated_at="2024-01-31T23:59:59Z">
         <code>AWG</code>
         <curr>Aruban Florin</curr>
         <loc>AW</loc>
     </Currency>
-    <Currency rate="2.158072238">
+    <Currency rate="2.1548989146" last_updated_at="2024-01-31T23:59:59Z">
         <code>AZN</code>
         <curr>Azerbaijani Manat</curr>
         <loc>AZ</loc>
     </Currency>
-    <Currency rate="2.2942849864">
+    <Currency rate="2.2975155762" last_updated_at="2024-01-31T23:59:59Z">
         <code>BAM</code>
         <curr>Bosnia-Herzegovina Convertible Mark</curr>
         <loc>BA</loc>
     </Currency>
-    <Currency rate="2.5389085153">
+    <Currency rate="2.5351751936" last_updated_at="2024-01-31T23:59:59Z">
         <code>BBD</code>
         <curr>Barbadian Dollar</curr>
         <loc>BB</loc>
     </Currency>
-    <Currency rate="139.1543994745">
+    <Currency rate="139.0057550516" last_updated_at="2024-01-31T23:59:59Z">
         <code>BDT</code>
         <curr>Bangladeshi Taka</curr>
         <loc>BD</loc>
     </Currency>
-    <Currency rate="2.2774900286">
+    <Currency rate="2.2926734002" last_updated_at="2024-01-31T23:59:59Z">
         <code>BGN</code>
         <curr>Bulgarian Lev</curr>
         <loc>BG</loc>
     </Currency>
-    <Currency rate="0.4773148009">
+    <Currency rate="0.4766129364" last_updated_at="2024-01-31T23:59:59Z">
         <code>BHD</code>
         <curr>Bahraini Dinar</curr>
         <loc>BH</loc>
     </Currency>
-    <Currency rate="3622.7040682764">
+    <Currency rate="3617.8437550632" last_updated_at="2024-01-31T23:59:59Z">
         <code>BIF</code>
         <curr>Burundian Franc</curr>
         <loc>BI</loc>
     </Currency>
-    <Currency rate="1.2694542576">
+    <Currency rate="1.2675875968" last_updated_at="2024-01-31T23:59:59Z">
         <code>BMD</code>
         <curr>Bermudan Dollar</curr>
         <loc>BM</loc>
     </Currency>
-    <Currency rate="0.0039610413">
+    <Currency rate="0.0040504227" last_updated_at="2024-01-31T23:59:59Z">
         <code>BNB</code>
         <curr>Binance</curr>
         <loc />
     </Currency>
-    <Currency rate="1.6992409041">
+    <Currency rate="1.6981113415" last_updated_at="2024-01-31T23:59:59Z">
         <code>BND</code>
         <curr>Brunei Dollar</curr>
         <loc>BN</loc>
     </Currency>
-    <Currency rate="8.7916322754">
+    <Currency rate="8.7591712323" last_updated_at="2024-01-31T23:59:59Z">
         <code>BOB</code>
         <curr>Bolivian Boliviano</curr>
         <loc>BO</loc>
     </Currency>
-    <Currency rate="6.2872903393">
+    <Currency rate="6.284637029" last_updated_at="2024-01-31T23:59:59Z">
         <code>BRL</code>
         <curr>Brazilian Real</curr>
         <loc>BR</loc>
     </Currency>
-    <Currency rate="1.2694542576">
+    <Currency rate="1.2675875968" last_updated_at="2024-01-31T23:59:59Z">
         <code>BSD</code>
         <curr>Bahamian Dollar</curr>
         <loc>BS</loc>
     </Currency>
-    <Currency rate="2.95152E-5">
+    <Currency rate="2.97025E-5" last_updated_at="2024-01-31T23:59:59Z">
         <code>BTC</code>
         <curr>Bitcoin</curr>
         <loc />
     </Currency>
-    <Currency rate="105.3605380602">
+    <Currency rate="105.8398184476" last_updated_at="2024-01-31T23:59:59Z">
         <code>BTN</code>
         <curr>Bhutanese Ngultrum</curr>
         <loc>BT</loc>
     </Currency>
-    <Currency rate="17.2279186223">
+    <Currency rate="17.3483718602" last_updated_at="2024-01-31T23:59:59Z">
         <code>BWP</code>
         <curr>Botswanan Pula</curr>
         <loc>BW, ZW</loc>
     </Currency>
-    <Currency rate="4.1827640985">
+    <Currency rate="4.1765738427" last_updated_at="2024-01-31T23:59:59Z">
         <code>BYN</code>
         <curr>Belarusian ruble</curr>
         <loc />
     </Currency>
-    <Currency rate="41827.619077442">
+    <Currency rate="41765.77374596" last_updated_at="2024-01-31T23:59:59Z">
         <code>BYR</code>
         <curr>Belarusian Ruble</curr>
         <loc>BY</loc>
     </Currency>
-    <Currency rate="2.5389085153">
+    <Currency rate="2.5351751936" last_updated_at="2024-01-31T23:59:59Z">
         <code>BZD</code>
         <curr>Belize Dollar</curr>
         <loc>BZ</loc>
     </Currency>
-    <Currency rate="1.701386391">
+    <Currency rate="1.7029914537" last_updated_at="2024-01-31T23:59:59Z">
         <code>CAD</code>
         <curr>Canadian Dollar</curr>
         <loc>CA</loc>
     </Currency>
-    <Currency rate="3377.8451690137">
+    <Currency rate="3375.3239676633" last_updated_at="2024-01-31T23:59:59Z">
         <code>CDF</code>
         <curr>Congolese Franc</curr>
         <loc>CD</loc>
     </Currency>
-    <Currency rate="1.0941300938">
+    <Currency rate="1.0934085265" last_updated_at="2024-01-31T23:59:59Z">
         <code>CHF</code>
         <curr>Swiss Franc</curr>
         <loc>CH, LI</loc>
     </Currency>
-    <Currency rate="0.0317109724">
+    <Currency rate="0.0317530754" last_updated_at="2024-01-31T23:59:59Z">
         <code>CLF</code>
         <curr>Unidad de Fomento</curr>
         <loc>CL</loc>
     </Currency>
-    <Currency rate="1183.5948466938">
+    <Currency rate="1184.7978953764" last_updated_at="2024-01-31T23:59:59Z">
         <code>CLP</code>
         <curr>Chilean Peso</curr>
         <loc>CL</loc>
     </Currency>
-    <Currency rate="9.107484894">
+    <Currency rate="9.0869309394" last_updated_at="2024-01-31T23:59:59Z">
         <code>CNY</code>
         <curr>Chinese Yuan</curr>
         <loc>CN</loc>
     </Currency>
-    <Currency rate="4966.3284331243">
+    <Currency rate="4941.6913362128" last_updated_at="2024-01-31T23:59:59Z">
         <code>COP</code>
         <curr>Coombian Peso</curr>
         <loc>CO</loc>
     </Currency>
-    <Currency rate="652.9959155915">
+    <Currency rate="651.8692411272" last_updated_at="2024-01-31T23:59:59Z">
         <code>CRC</code>
         <curr>Costa Rican Colón</curr>
         <loc>CR</loc>
     </Currency>
-    <Currency rate="1.2694542576">
+    <Currency rate="1.2675875968" last_updated_at="2024-01-31T23:59:59Z">
         <code>CUC</code>
         <curr>Cuban Convertible Peso</curr>
         <loc>CU</loc>
     </Currency>
-    <Currency rate="30.4669021836">
+    <Currency rate="30.4221023232" last_updated_at="2024-01-31T23:59:59Z">
         <code>CUP</code>
         <curr>Cuban Peso</curr>
         <loc>CU</loc>
     </Currency>
-    <Currency rate="129.0694333018">
+    <Currency rate="129.2957735008" last_updated_at="2024-01-31T23:59:59Z">
         <code>CVE</code>
         <curr>Cape Verdean Escudo</curr>
         <loc>CV</loc>
     </Currency>
-    <Currency rate="28.9434723119">
+    <Currency rate="29.0755496756" last_updated_at="2024-01-31T23:59:59Z">
         <code>CZK</code>
         <curr>Czech Republic Koruna</curr>
         <loc>CZ</loc>
     </Currency>
-    <Currency rate="1.2703441233">
+    <Currency rate="1.2658728297" last_updated_at="2024-01-31T23:59:59Z">
         <code>DAI</code>
         <curr>Dai</curr>
         <loc />
     </Currency>
-    <Currency rate="225.6086801236">
+    <Currency rate="225.2769352907" last_updated_at="2024-01-31T23:59:59Z">
         <code>DJF</code>
         <curr>Djiboutian Franc</curr>
         <loc>DJ</loc>
     </Currency>
-    <Currency rate="8.7256461797">
+    <Currency rate="8.7464063221" last_updated_at="2024-01-31T23:59:59Z">
         <code>DKK</code>
         <curr>Danish Krone</curr>
         <loc>DK, FO, GL</loc>
     </Currency>
-    <Currency rate="74.7986684422">
+    <Currency rate="74.3601699714" last_updated_at="2024-01-31T23:59:59Z">
         <code>DOP</code>
         <curr>Dominican Peso</curr>
         <loc>DO</loc>
     </Currency>
-    <Currency rate="0.1855665914">
+    <Currency rate="0.1900949256" last_updated_at="2024-01-31T23:59:59Z">
         <code>DOT</code>
         <curr>Polkadot</curr>
         <loc />
     </Currency>
-    <Currency rate="171.9322422501">
+    <Currency rate="171.6197060775" last_updated_at="2024-01-31T23:59:59Z">
         <code>DZD</code>
         <curr>Algerian Dinar</curr>
         <loc>DZ</loc>
     </Currency>
-    <Currency rate="39.3330293264">
+    <Currency rate="39.1826325498" last_updated_at="2024-01-31T23:59:59Z">
         <code>EGP</code>
         <curr>Egyptian Pound</curr>
         <loc>EG, PS</loc>
     </Currency>
-    <Currency rate="19.0418138647">
+    <Currency rate="19.013813952" last_updated_at="2024-01-31T23:59:59Z">
         <code>ERN</code>
         <curr>Eritrean Nakfa</curr>
         <loc>ER</loc>
     </Currency>
-    <Currency rate="71.7275932996">
+    <Currency rate="71.2394741959" last_updated_at="2024-01-31T23:59:59Z">
         <code>ETB</code>
         <curr>Ethiopian Birr</curr>
         <loc>ET</loc>
     </Currency>
-    <Currency rate="0.0005401779">
+    <Currency rate="0.000553853" last_updated_at="2024-01-31T23:59:59Z">
         <code>ETH</code>
         <curr>Ethereum</curr>
         <loc />
     </Currency>
-    <Currency rate="1.1707289187">
+    <Currency rate="1.1733932877" last_updated_at="2024-01-31T23:59:59Z">
         <code>EUR</code>
         <curr>Euro</curr>
         <loc>AD, AT, AX, BE, BL, CP, CY, DE, EA, EE, ES, EU, FI, FR, FX, GF, GP, GR, IC, IE, IT, LT,
             LU, LV, MC, ME, MF, MQ, MT, NL, PM, PT, RE, SI, SK, SM, TF, VA, XK, YT, ZW</loc>
     </Currency>
-    <Currency rate="2.8381321207">
+    <Currency rate="2.8377488078" last_updated_at="2024-01-31T23:59:59Z">
         <code>FJD</code>
         <curr>Fijian Dollar</curr>
         <loc>FJ</loc>
     </Currency>
-    <Currency rate="1.0000559926">
+    <Currency rate="0.999824077" last_updated_at="2024-01-31T23:59:59Z">
         <code>FKP</code>
         <curr>Falkland Islands Pound</curr>
         <loc>FK</loc>
     </Currency>
-    <Currency rate="1">
+    <Currency rate="1" last_updated_at="2024-01-31T23:59:59Z">
         <code>GBP</code>
         <curr>British Pound Sterling</curr>
         <loc>GB, GG, GS, IM, JE, TA, UK, ZW</loc>
     </Currency>
-    <Currency rate="3.4008178094">
+    <Currency rate="3.3998606422" last_updated_at="2024-01-31T23:59:59Z">
         <code>GEL</code>
         <curr>Georgian Lari</curr>
         <loc>GE</loc>
     </Currency>
-    <Currency rate="1.0000558422">
+    <Currency rate="0.9998241428" last_updated_at="2024-01-31T23:59:59Z">
         <code>GGP</code>
         <curr>Guernsey pound</curr>
         <loc />
     </Currency>
-    <Currency rate="15.5534314429">
+    <Currency rate="15.5753710431" last_updated_at="2024-01-31T23:59:59Z">
         <code>GHS</code>
         <curr>Ghanaian Cedi</curr>
         <loc>GH</loc>
     </Currency>
-    <Currency rate="1.0000565445">
+    <Currency rate="0.9998240462" last_updated_at="2024-01-31T23:59:59Z">
         <code>GIP</code>
         <curr>Gibraltar Pound</curr>
         <loc>GI</loc>
     </Currency>
-    <Currency rate="74.0737681036">
+    <Currency rate="74.0739764275" last_updated_at="2024-01-31T23:59:59Z">
         <code>GMD</code>
         <curr>Gambian Dalasi</curr>
         <loc>GM</loc>
     </Currency>
-    <Currency rate="10866.252703489">
+    <Currency rate="10859.981407638" last_updated_at="2024-01-31T23:59:59Z">
         <code>GNF</code>
         <curr>Guinean Franc</curr>
         <loc>GN</loc>
     </Currency>
-    <Currency rate="9.9071524012">
+    <Currency rate="9.8984914069" last_updated_at="2024-01-31T23:59:59Z">
         <code>GTQ</code>
         <curr>Guatemalan Quetzal</curr>
         <loc>GT</loc>
     </Currency>
-    <Currency rate="265.2078429245">
+    <Currency rate="265.2645323733" last_updated_at="2024-01-31T23:59:59Z">
         <code>GYD</code>
         <curr>Guyanaese Dollar</curr>
         <loc>GY</loc>
     </Currency>
-    <Currency rate="9.9209773352">
+    <Currency rate="9.9080616387" last_updated_at="2024-01-31T23:59:59Z">
         <code>HKD</code>
         <curr>Hong Kong Dollar</curr>
         <loc>HK</loc>
     </Currency>
-    <Currency rate="31.2994650071">
+    <Currency rate="31.2717464969" last_updated_at="2024-01-31T23:59:59Z">
         <code>HNL</code>
         <curr>Honduran Lempira</curr>
         <loc>HN</loc>
     </Currency>
-    <Currency rate="8.9130047742">
+    <Currency rate="8.9001014403" last_updated_at="2024-01-31T23:59:59Z">
         <code>HRK</code>
         <curr>Croatian Kuna</curr>
         <loc>HR</loc>
     </Currency>
-    <Currency rate="170.0842597854">
+    <Currency rate="169.9396957372" last_updated_at="2024-01-31T23:59:59Z">
         <code>HTG</code>
         <curr>Haitian Gourde</curr>
         <loc>HT</loc>
     </Currency>
-    <Currency rate="452.2280366155">
+    <Currency rate="450.0532027057" last_updated_at="2024-01-31T23:59:59Z">
         <code>HUF</code>
         <curr>Hungarian Forint</curr>
         <loc>HU</loc>
     </Currency>
-    <Currency rate="20010.411987164">
+    <Currency rate="19983.964157739" last_updated_at="2024-01-31T23:59:59Z">
         <code>IDR</code>
         <curr>Indonesian Rupiah</curr>
         <loc>ID</loc>
     </Currency>
-    <Currency rate="4.6404527353">
+    <Currency rate="4.6228168027" last_updated_at="2024-01-31T23:59:59Z">
         <code>ILS</code>
         <curr>Israeli New Sheqel</curr>
         <loc>IL, PS</loc>
     </Currency>
-    <Currency rate="1.0000559304">
+    <Currency rate="0.9998244351" last_updated_at="2024-01-31T23:59:59Z">
         <code>IMP</code>
         <curr>Manx pound</curr>
         <loc />
     </Currency>
-    <Currency rate="105.4765322308">
+    <Currency rate="105.3388114562" last_updated_at="2024-01-31T23:59:59Z">
         <code>INR</code>
         <curr>Indian Rupee</curr>
         <loc>BT, IN</loc>
     </Currency>
-    <Currency rate="1660.8427164984">
+    <Currency rate="1658.8270327162" last_updated_at="2024-01-31T23:59:59Z">
         <code>IQD</code>
         <curr>Iraqi Dinar</curr>
         <loc>IQ</loc>
     </Currency>
-    <Currency rate="53331.068341378">
+    <Currency rate="53258.904384455" last_updated_at="2024-01-31T23:59:59Z">
         <code>IRR</code>
         <curr>Iranian Rial</curr>
         <loc>IR</loc>
     </Currency>
-    <Currency rate="173.4132433254">
+    <Currency rate="173.0606887108" last_updated_at="2024-01-31T23:59:59Z">
         <code>ISK</code>
         <curr>Icelandic Króna</curr>
         <loc>IS</loc>
     </Currency>
-    <Currency rate="1.0000562697">
+    <Currency rate="0.9998238947" last_updated_at="2024-01-31T23:59:59Z">
         <code>JEP</code>
         <curr>Jersey pound</curr>
         <loc />
     </Currency>
-    <Currency rate="197.4531391683">
+    <Currency rate="197.2946423027" last_updated_at="2024-01-31T23:59:59Z">
         <code>JMD</code>
         <curr>Jamaican Dollar</curr>
         <loc>JM</loc>
     </Currency>
-    <Currency rate="0.9013125229">
+    <Currency rate="0.8999871937" last_updated_at="2024-01-31T23:59:59Z">
         <code>JOD</code>
         <curr>Jordanian Dinar</curr>
         <loc>JO, PS</loc>
     </Currency>
-    <Currency rate="187.0981712847">
+    <Currency rate="186.2786874787" last_updated_at="2024-01-31T23:59:59Z">
         <code>JPY</code>
         <curr>Japanese Yen</curr>
         <loc>JP</loc>
     </Currency>
-    <Currency rate="204.7772784708">
+    <Currency rate="203.4350140735" last_updated_at="2024-01-31T23:59:59Z">
         <code>KES</code>
         <curr>Kenyan Shilling</curr>
         <loc>KE</loc>
     </Currency>
-    <Currency rate="113.238510139">
+    <Currency rate="113.1608059096" last_updated_at="2024-01-31T23:59:59Z">
         <code>KGS</code>
         <curr>Kyrgystani Som</curr>
         <loc>KG</loc>
     </Currency>
-    <Currency rate="5175.3974899738">
+    <Currency rate="5173.7709760305" last_updated_at="2024-01-31T23:59:59Z">
         <code>KHR</code>
         <curr>Cambodian Riel</curr>
         <loc>KH</loc>
     </Currency>
-    <Currency rate="576.8404820119">
+    <Currency rate="574.1220204409" last_updated_at="2024-01-31T23:59:59Z">
         <code>KMF</code>
         <curr>Comorian Franc</curr>
         <loc>KM</loc>
     </Currency>
-    <Currency rate="1142.493178165">
+    <Currency rate="1140.8303831745" last_updated_at="2024-01-31T23:59:59Z">
         <code>KPW</code>
         <curr>North Korean Won</curr>
         <loc>KP</loc>
     </Currency>
-    <Currency rate="1684.6526998013">
+    <Currency rate="1689.5869775376" last_updated_at="2024-01-31T23:59:59Z">
         <code>KRW</code>
         <curr>South Korean Won</curr>
         <loc>KR</loc>
     </Currency>
-    <Currency rate="0.3905349849">
+    <Currency rate="0.3896944938" last_updated_at="2024-01-31T23:59:59Z">
         <code>KWD</code>
         <curr>Kuwaiti Dinar</curr>
         <loc>KW</loc>
     </Currency>
-    <Currency rate="1.0578743165">
+    <Currency rate="1.056318772" last_updated_at="2024-01-31T23:59:59Z">
         <code>KYD</code>
         <curr>Cayman Islands Dollar</curr>
         <loc>KY</loc>
     </Currency>
-    <Currency rate="568.9315336817">
+    <Currency rate="569.1689986097" last_updated_at="2024-01-31T23:59:59Z">
         <code>KZT</code>
         <curr>Kazakhstani Tenge</curr>
         <loc>KZ</loc>
     </Currency>
-    <Currency rate="26340.383705843">
+    <Currency rate="26302.453410215" last_updated_at="2024-01-31T23:59:59Z">
         <code>LAK</code>
         <curr>Laotian Kip</curr>
         <loc>LA</loc>
     </Currency>
-    <Currency rate="19058.917514596">
+    <Currency rate="19032.766485656" last_updated_at="2024-01-31T23:59:59Z">
         <code>LBP</code>
         <curr>Lebanese Pound</curr>
         <loc>LB</loc>
     </Currency>
-    <Currency rate="400.8962468706">
+    <Currency rate="399.7132977425" last_updated_at="2024-01-31T23:59:59Z">
         <code>LKR</code>
         <curr>Sri Lankan Rupee</curr>
         <loc>LK</loc>
     </Currency>
-    <Currency rate="240.8199445071">
+    <Currency rate="240.5095874687" last_updated_at="2024-01-31T23:59:59Z">
         <code>LRD</code>
         <curr>Liberian Dollar</curr>
         <loc>LR</loc>
     </Currency>
-    <Currency rate="23.8915019254">
+    <Currency rate="23.6773600415" last_updated_at="2024-01-31T23:59:59Z">
         <code>LSL</code>
         <curr>Lesotho Loti</curr>
         <loc>LS</loc>
     </Currency>
-    <Currency rate="0.0187653253">
+    <Currency rate="0.0189542371" last_updated_at="2024-01-31T23:59:59Z">
         <code>LTC</code>
         <curr>Litecoin</curr>
         <loc />
     </Currency>
-    <Currency rate="4.0424134737">
+    <Currency rate="4.0508194705" last_updated_at="2024-01-31T23:59:59Z">
         <code>LTL</code>
         <curr>Lithuanian Litas</curr>
         <loc />
     </Currency>
-    <Currency rate="0.8228133301">
+    <Currency rate="0.8245237634" last_updated_at="2024-01-31T23:59:59Z">
         <code>LVL</code>
         <curr>Latvian Lats</curr>
         <loc />
     </Currency>
-    <Currency rate="6.1214490191">
+    <Currency rate="6.1165550218" last_updated_at="2024-01-31T23:59:59Z">
         <code>LYD</code>
         <curr>Libyan Dinar</curr>
         <loc>LY</loc>
     </Currency>
-    <Currency rate="12.6911417563">
+    <Currency rate="12.671478931" last_updated_at="2024-01-31T23:59:59Z">
         <code>MAD</code>
         <curr>Moroccan Dirham</curr>
         <loc>EH, MA</loc>
     </Currency>
-    <Currency rate="1.5861799685">
+    <Currency rate="1.608789374" last_updated_at="2024-01-31T23:59:59Z">
         <code>MATIC</code>
         <curr>Matic Token</curr>
         <loc />
     </Currency>
-    <Currency rate="22.4224998463">
+    <Currency rate="22.3918621857" last_updated_at="2024-01-31T23:59:59Z">
         <code>MDL</code>
         <curr>Moldovan Leu</curr>
         <loc>MD</loc>
     </Currency>
-    <Currency rate="5771.3047746676">
+    <Currency rate="5764.6397410172" last_updated_at="2024-01-31T23:59:59Z">
         <code>MGA</code>
         <curr>Malagasy Ariary</curr>
         <loc>MG</loc>
     </Currency>
-    <Currency rate="72.1068760129">
+    <Currency rate="71.7688682216" last_updated_at="2024-01-31T23:59:59Z">
         <code>MKD</code>
         <curr>Macedonian Denar</curr>
         <loc>MK</loc>
     </Currency>
-    <Currency rate="2659.7283763991">
+    <Currency rate="2656.6653912944" last_updated_at="2024-01-31T23:59:59Z">
         <code>MMK</code>
         <curr>Myanma Kyat</curr>
         <loc>MM</loc>
     </Currency>
-    <Currency rate="4345.8035943207">
+    <Currency rate="4333.0999632581" last_updated_at="2024-01-31T23:59:59Z">
         <code>MNT</code>
         <curr>Mongolian Tugrik</curr>
         <loc>MN</loc>
     </Currency>
-    <Currency rate="10.2133581058">
+    <Currency rate="10.1918876414" last_updated_at="2024-01-31T23:59:59Z">
         <code>MOP</code>
         <curr>Macanese Pataca</curr>
         <loc>MO</loc>
     </Currency>
-    <Currency rate="453.1949516345">
+    <Currency rate="452.5285540322" last_updated_at="2024-01-31T23:59:59Z">
         <code>MRO</code>
         <curr>Mauritanian ouguiya</curr>
         <loc>MR</loc>
     </Currency>
-    <Currency rate="56.928152528">
+    <Currency rate="56.9885038226" last_updated_at="2024-01-31T23:59:59Z">
         <code>MUR</code>
         <curr>Mauritian Rupee</curr>
         <loc>MU</loc>
     </Currency>
-    <Currency rate="19.6149113477">
+    <Currency rate="19.5905688756" last_updated_at="2024-01-31T23:59:59Z">
         <code>MVR</code>
         <curr>Maldivian Rufiyaa</curr>
         <loc>MV</loc>
     </Currency>
-    <Currency rate="2137.2806863023">
+    <Currency rate="2134.5762231793" last_updated_at="2024-01-31T23:59:59Z">
         <code>MWK</code>
         <curr>Malawian Kwacha</curr>
         <loc>MW</loc>
     </Currency>
-    <Currency rate="21.7667003235">
+    <Currency rate="21.8196601312" last_updated_at="2024-01-31T23:59:59Z">
         <code>MXN</code>
         <curr>Mexican Peso</curr>
         <loc>MX</loc>
     </Currency>
-    <Currency rate="6.0000131703">
+    <Currency rate="5.9949299696" last_updated_at="2024-01-31T23:59:59Z">
         <code>MYR</code>
         <curr>Malaysian Ringgit</curr>
         <loc>MY</loc>
     </Currency>
-    <Currency rate="80.8381456438">
+    <Currency rate="80.7640658702" last_updated_at="2024-01-31T23:59:59Z">
         <code>MZN</code>
         <curr>Mozambican Metical</curr>
         <loc>MZ</loc>
     </Currency>
-    <Currency rate="23.7993009956">
+    <Currency rate="23.610557992" last_updated_at="2024-01-31T23:59:59Z">
         <code>NAD</code>
         <curr>Namibian Dollar</curr>
         <loc>NA</loc>
     </Currency>
-    <Currency rate="1128.9850929071">
+    <Currency rate="1127.3080412919" last_updated_at="2024-01-31T23:59:59Z">
         <code>NGN</code>
         <curr>Nigerian Naira</curr>
         <loc>NG</loc>
     </Currency>
-    <Currency rate="46.6579910107">
+    <Currency rate="46.5839192682" last_updated_at="2024-01-31T23:59:59Z">
         <code>NIO</code>
         <curr>Nicaraguan Córdoba</curr>
         <loc>NI</loc>
     </Currency>
-    <Currency rate="13.2485469169">
+    <Currency rate="13.3248826649" last_updated_at="2024-01-31T23:59:59Z">
         <code>NOK</code>
         <curr>Norwegian Krone</curr>
         <loc>BV, NO, SJ</loc>
     </Currency>
-    <Currency rate="168.5072653858">
+    <Currency rate="168.3017088355" last_updated_at="2024-01-31T23:59:59Z">
         <code>NPR</code>
         <curr>Nepalese Rupee</curr>
         <loc>NP</loc>
     </Currency>
-    <Currency rate="2.0702389164">
+    <Currency rate="2.0741792391" last_updated_at="2024-01-31T23:59:59Z">
         <code>NZD</code>
         <curr>New Zealand Dollar</curr>
         <loc>CK, NU, NZ, PN, TK</loc>
     </Currency>
-    <Currency rate="0.487483204">
+    <Currency rate="0.4870452642" last_updated_at="2024-01-31T23:59:59Z">
         <code>OMR</code>
         <curr>Omani Rial</curr>
         <loc>OM</loc>
     </Currency>
-    <Currency rate="0.4017109602">
+    <Currency rate="0.4362471654" last_updated_at="2024-01-31T23:59:59Z">
         <code>OP</code>
         <curr>Optimism</curr>
         <loc />
     </Currency>
-    <Currency rate="1.2685024102">
+    <Currency rate="1.2671948312" last_updated_at="2024-01-31T23:59:59Z">
         <code>PAB</code>
         <curr>Panamanian Balboa</curr>
         <loc>PA</loc>
     </Currency>
-    <Currency rate="4.840924806">
+    <Currency rate="4.8220052253" last_updated_at="2024-01-31T23:59:59Z">
         <code>PEN</code>
         <curr>Peruvian Nuevo Sol</curr>
         <loc>PE</loc>
     </Currency>
-    <Currency rate="4.7300253467">
+    <Currency rate="4.7495752949" last_updated_at="2024-01-31T23:59:59Z">
         <code>PGK</code>
         <curr>Papua New Guinean Kina</curr>
         <loc>PG</loc>
     </Currency>
-    <Currency rate="71.5817780498">
+    <Currency rate="71.3765767099" last_updated_at="2024-01-31T23:59:59Z">
         <code>PHP</code>
         <curr>Philippine Peso</curr>
         <loc>PH</loc>
     </Currency>
-    <Currency rate="354.862455117">
+    <Currency rate="354.4363884379" last_updated_at="2024-01-31T23:59:59Z">
         <code>PKR</code>
         <curr>Pakistani Rupee</curr>
         <loc>PK</loc>
     </Currency>
-    <Currency rate="5.0893317574">
+    <Currency rate="5.0763976164" last_updated_at="2024-01-31T23:59:59Z">
         <code>PLN</code>
         <curr>Polish Zloty</curr>
         <loc>PL</loc>
     </Currency>
-    <Currency rate="9267.5599031251">
+    <Currency rate="9259.5138196458" last_updated_at="2024-01-31T23:59:59Z">
         <code>PYG</code>
         <curr>Paraguayan Guarani</curr>
         <loc>PY</loc>
     </Currency>
-    <Currency rate="4.6207760665">
+    <Currency rate="4.6158446602" last_updated_at="2024-01-31T23:59:59Z">
         <code>QAR</code>
         <curr>Qatari Rial</curr>
         <loc>QA</loc>
     </Currency>
-    <Currency rate="5.8248792325">
+    <Currency rate="5.8378247415" last_updated_at="2024-01-31T23:59:59Z">
         <code>RON</code>
         <curr>Romanian Leu</curr>
         <loc>RO</loc>
     </Currency>
-    <Currency rate="136.6884115933">
+    <Currency rate="136.9647670207" last_updated_at="2024-01-31T23:59:59Z">
         <code>RSD</code>
         <curr>Serbian Dinar</curr>
         <loc>RS</loc>
     </Currency>
-    <Currency rate="113.7265056426">
+    <Currency rate="114.1368012157" last_updated_at="2024-01-31T23:59:59Z">
         <code>RUB</code>
         <curr>Russian Ruble</curr>
         <loc>RU, SU</loc>
     </Currency>
-    <Currency rate="1612.5029376515">
+    <Currency rate="1611.4672703048" last_updated_at="2024-01-31T23:59:59Z">
         <code>RWF</code>
         <curr>Rwandan Franc</curr>
         <loc>RW</loc>
     </Currency>
-    <Currency rate="4.7541701623">
+    <Currency rate="4.7502597804" last_updated_at="2024-01-31T23:59:59Z">
         <code>SAR</code>
         <curr>Saudi Riyal</curr>
         <loc>SA</loc>
     </Currency>
-    <Currency rate="10.5675969854">
+    <Currency rate="10.5604796805" last_updated_at="2024-01-31T23:59:59Z">
         <code>SBD</code>
         <curr>Solomon Islands Dollar</curr>
         <loc>SB</loc>
     </Currency>
-    <Currency rate="18.1875255594">
+    <Currency rate="17.5596651944" last_updated_at="2024-01-31T23:59:59Z">
         <code>SCR</code>
         <curr>Seychellois Rupee</curr>
         <loc>SC</loc>
     </Currency>
-    <Currency rate="763.5767359758">
+    <Currency rate="762.4539394746" last_updated_at="2024-01-31T23:59:59Z">
         <code>SDG</code>
         <curr>Sudanese Pound</curr>
         <loc>SD</loc>
     </Currency>
-    <Currency rate="13.204840245">
+    <Currency rate="13.183470084" last_updated_at="2024-01-31T23:59:59Z">
         <code>SEK</code>
         <curr>Swedish Krona</curr>
         <loc>SE</loc>
     </Currency>
-    <Currency rate="1.6997868466">
+    <Currency rate="1.6993028277" last_updated_at="2024-01-31T23:59:59Z">
         <code>SGD</code>
         <curr>Singapore Dollar</curr>
         <loc>SG</loc>
     </Currency>
-    <Currency rate="1.0000000589">
+    <Currency rate="0.9999999847" last_updated_at="2024-01-31T23:59:59Z">
         <code>SHP</code>
         <curr>Saint Helena Pound</curr>
         <loc>SH</loc>
     </Currency>
-    <Currency rate="28518.476212581">
+    <Currency rate="28564.349414017" last_updated_at="2024-01-31T23:59:59Z">
         <code>SLL</code>
         <curr>Sierra Leonean Leone</curr>
         <loc>SL</loc>
     </Currency>
-    <Currency rate="0.012512395">
+    <Currency rate="0.0130403407" last_updated_at="2024-01-31T23:59:59Z">
         <code>SOL</code>
         <curr>Solana</curr>
         <loc />
     </Currency>
-    <Currency rate="724.7018425319">
+    <Currency rate="722.9917601557" last_updated_at="2024-01-31T23:59:59Z">
         <code>SOS</code>
         <curr>Somali Shilling</curr>
         <loc>SO</loc>
     </Currency>
-    <Currency rate="46.0055005132">
+    <Currency rate="46.4075179341" last_updated_at="2024-01-31T23:59:59Z">
         <code>SRD</code>
         <curr>Surinamese Dollar</curr>
         <loc>SR</loc>
     </Currency>
-    <Currency rate="28948.606818127">
+    <Currency rate="29110.191731071" last_updated_at="2024-01-31T23:59:59Z">
         <code>STD</code>
         <curr>São Tomé and Príncipe dobra</curr>
         <loc>ST</loc>
     </Currency>
-    <Currency rate="11.1077247544">
+    <Currency rate="11.091391472" last_updated_at="2024-01-31T23:59:59Z">
         <code>SVC</code>
         <curr>Salvadoran Colón</curr>
         <loc />
     </Currency>
-    <Currency rate="16505.221380165">
+    <Currency rate="16481.019799145" last_updated_at="2024-01-31T23:59:59Z">
         <code>SYP</code>
         <curr>Syrian Pound</curr>
         <loc>SY</loc>
     </Currency>
-    <Currency rate="23.8201950628">
+    <Currency rate="23.6290533965" last_updated_at="2024-01-31T23:59:59Z">
         <code>SZL</code>
         <curr>Swazi Lilangeni</curr>
         <loc>SZ</loc>
     </Currency>
-    <Currency rate="44.9284029274">
+    <Currency rate="45.139119091" last_updated_at="2024-01-31T23:59:59Z">
         <code>THB</code>
         <curr>Thai Baht</curr>
         <loc>TH</loc>
     </Currency>
-    <Currency rate="13.9149340758">
+    <Currency rate="13.88777995" last_updated_at="2024-01-31T23:59:59Z">
         <code>TJS</code>
         <curr>Tajikistani Somoni</curr>
         <loc>TJ</loc>
     </Currency>
-    <Currency rate="4.4430899018">
+    <Currency rate="4.4365565888" last_updated_at="2024-01-31T23:59:59Z">
         <code>TMT</code>
         <curr>Turkmenistani Manat</curr>
         <loc>TM</loc>
     </Currency>
-    <Currency rate="3.9538426438">
+    <Currency rate="3.9438840129" last_updated_at="2024-01-31T23:59:59Z">
         <code>TND</code>
         <curr>Tunisian Dinar</curr>
         <loc>TN</loc>
     </Currency>
-    <Currency rate="2.971551609">
+    <Currency rate="2.9678286406" last_updated_at="2024-01-31T23:59:59Z">
         <code>TOP</code>
         <curr>Tongan Paʻanga</curr>
         <loc>TO</loc>
     </Currency>
-    <Currency rate="38.5305321755">
+    <Currency rate="38.4861323646" last_updated_at="2024-01-31T23:59:59Z">
         <code>TRY</code>
         <curr>Turkish Lira</curr>
         <loc>TR</loc>
     </Currency>
-    <Currency rate="8.5617341015">
+    <Currency rate="8.5325898147" last_updated_at="2024-01-31T23:59:59Z">
         <code>TTD</code>
         <curr>Trinidad and Tobago Dollar</curr>
         <loc>TT</loc>
     </Currency>
-    <Currency rate="39.6198272765">
+    <Currency rate="39.6273302669" last_updated_at="2024-01-31T23:59:59Z">
         <code>TWD</code>
         <curr>New Taiwan Dollar</curr>
         <loc>TW</loc>
     </Currency>
-    <Currency rate="3227.5760164402">
+    <Currency rate="3223.7243948629" last_updated_at="2024-01-31T23:59:59Z">
         <code>TZS</code>
         <curr>Tanzanian Shilling</curr>
         <loc>TZ</loc>
     </Currency>
-    <Currency rate="48.2579913957">
+    <Currency rate="48.1829134723" last_updated_at="2024-01-31T23:59:59Z">
         <code>UAH</code>
         <curr>Ukrainian Hryvnia</curr>
         <loc>UA</loc>
     </Currency>
-    <Currency rate="4835.5486168572">
+    <Currency rate="4830.3914683656" last_updated_at="2024-01-31T23:59:59Z">
         <code>UGX</code>
         <curr>Ugandan Shilling</curr>
         <loc>UG</loc>
     </Currency>
-    <Currency rate="1.2694542576">
+    <Currency rate="1.2675875968" last_updated_at="2024-01-31T23:59:59Z">
         <code>USD</code>
         <curr>US Dollar</curr>
         <loc>AC, AS, BQ, DG, EC, FM, GU, HT, IO, MH, MP, PA, PR, PW, SV, TC, TL, UM, US, VG, VI, ZW</loc>
     </Currency>
-    <Currency rate="1.2692985038">
+    <Currency rate="1.2643643113" last_updated_at="2024-01-31T23:59:59Z">
         <code>USDC</code>
         <curr>USD Coin</curr>
         <loc />
     </Currency>
-    <Currency rate="1.2691506494">
+    <Currency rate="1.2656487953" last_updated_at="2024-01-31T23:59:59Z">
         <code>USDT</code>
         <curr>Tether</curr>
         <loc />
     </Currency>
-    <Currency rate="49.6312767473">
+    <Currency rate="49.6314095615" last_updated_at="2024-01-31T23:59:59Z">
         <code>UYU</code>
         <curr>Uruguayan Peso</curr>
         <loc>UY</loc>
     </Currency>
-    <Currency rate="15772.331068044">
+    <Currency rate="15754.371936032" last_updated_at="2024-01-31T23:59:59Z">
         <code>UZS</code>
         <curr>Uzbekistan Som</curr>
         <loc>UZ</loc>
     </Currency>
-    <Currency rate="4586193.3617171">
+    <Currency rate="4583060.6363246" last_updated_at="2024-01-31T23:59:59Z">
         <code>VEF</code>
         <curr>Venezuelan Bolívar</curr>
         <loc>VE</loc>
     </Currency>
-    <Currency rate="30968.263134821">
+    <Currency rate="30953.344521957" last_updated_at="2024-01-31T23:59:59Z">
         <code>VND</code>
         <curr>Vietnamese Dong</curr>
         <loc>VN</loc>
     </Currency>
-    <Currency rate="152.15365878">
+    <Currency rate="152.3428865129" last_updated_at="2024-01-31T23:59:59Z">
         <code>VUV</code>
         <curr>Vanuatu Vatu</curr>
         <loc>VU</loc>
     </Currency>
-    <Currency rate="3.4795762174">
+    <Currency rate="3.4772083918" last_updated_at="2024-01-31T23:59:59Z">
         <code>WST</code>
         <curr>Samoan Tala</curr>
         <loc>WS</loc>
     </Currency>
-    <Currency rate="767.7646244793">
+    <Currency rate="769.5296848495" last_updated_at="2024-01-31T23:59:59Z">
         <code>XAF</code>
         <curr>CFA Franc BEAC</curr>
         <loc>CF, CG, CM, GA, GQ, TD</loc>
     </Currency>
-    <Currency rate="0.0548145664">
+    <Currency rate="0.0553500011" last_updated_at="2024-01-31T23:59:59Z">
         <code>XAG</code>
         <curr>Silver Ounce</curr>
         <loc />
     </Currency>
-    <Currency rate="0.0006233488">
+    <Currency rate="0.0006214123" last_updated_at="2024-01-31T23:59:59Z">
         <code>XAU</code>
         <curr>Gold Ounce</curr>
         <loc />
     </Currency>
-    <Currency rate="3.4275264957">
+    <Currency rate="3.4224865114" last_updated_at="2024-01-31T23:59:59Z">
         <code>XCD</code>
         <curr>East Caribbean Dollar</curr>
         <loc>AG, AI, DM, GD, KN, LC, MS, VC</loc>
     </Currency>
-    <Currency rate="0.9521796524">
+    <Currency rate="0.9538091194" last_updated_at="2024-01-31T23:59:59Z">
         <code>XDR</code>
         <curr>Special drawing rights</curr>
         <loc />
     </Currency>
-    <Currency rate="767.7646497842">
+    <Currency rate="769.529670276" last_updated_at="2024-01-31T23:59:59Z">
         <code>XOF</code>
         <curr>CFA Franc BCEAO</curr>
         <loc>BF, BJ, CI, GW, ML, NE, SN, TG</loc>
     </Currency>
-    <Currency rate="0.0012967577">
+    <Currency rate="0.0012935693" last_updated_at="2024-01-31T23:59:59Z">
         <code>XPD</code>
         <curr>Palladium Ounce</curr>
         <loc />
     </Currency>
-    <Currency rate="139.571383239">
+    <Currency rate="139.9077544133" last_updated_at="2024-01-31T23:59:59Z">
         <code>XPF</code>
         <curr>CFP Franc</curr>
         <loc>NC, PF, WF</loc>
     </Currency>
-    <Currency rate="0.0013733643">
+    <Currency rate="0.0013735343" last_updated_at="2024-01-31T23:59:59Z">
         <code>XPT</code>
         <curr>Platinum Ounce</curr>
         <loc />
     </Currency>
-    <Currency rate="2.4704581996">
+    <Currency rate="2.5050374414" last_updated_at="2024-01-31T23:59:59Z">
         <code>XRP</code>
         <curr>Ripple</curr>
         <loc />
     </Currency>
-    <Currency rate="317.1916291448">
+    <Currency rate="316.8184533953" last_updated_at="2024-01-31T23:59:59Z">
         <code>YER</code>
         <curr>Yemeni Rial</curr>
         <loc>YE</loc>
     </Currency>
-    <Currency rate="23.8456997068">
+    <Currency rate="23.6323611572" last_updated_at="2024-01-31T23:59:59Z">
         <code>ZAR</code>
         <curr>South African Rand</curr>
         <loc>LS, NA, ZA, ZW</loc>
     </Currency>
-    <Currency rate="11426.611663949">
+    <Currency rate="11409.809476307" last_updated_at="2024-01-31T23:59:59Z">
         <code>ZMK</code>
         <curr>Zambian Kwacha</curr>
         <loc />
     </Currency>
-    <Currency rate="34.3881486678">
+    <Currency rate="34.3478389575" last_updated_at="2024-01-31T23:59:59Z">
         <code>ZMW</code>
         <curr>Zambian Kwacha</curr>
         <loc>ZM</loc>
     </Currency>
-    <Currency rate="459.4154958431">
+    <Currency rate="458.7399512816" last_updated_at="2024-01-31T23:59:59Z">
         <code>ZWL</code>
         <curr>Zimbabwean dollar</curr>
         <loc />

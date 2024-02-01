@@ -1,12 +1,6 @@
 <?php
 function validateParam()
 {
-    if (!isset($_GET['format']) || empty($_GET['format'])) {
-        $_GET['format'] = 'xml';
-    } else {
-        displayError($error_code = 1400, $error_message = "Format must be xml or json", $format = 'xml');
-    }
-
     # ensure PARAM values match the keys in $GET
     if (count(array_intersect(PARAMS, array_keys($_GET))) < 4) {
         displayError($error_code = 1000, $error_message = "Required parameter is missing", $format = $_GET['format']);
@@ -24,15 +18,29 @@ function validateParam()
     $to_currency_exist = false;
     $from_currency_exist = false;
     foreach ($xml->Currency as $currency) {
-        if (strval($to_currency_exist) == $currency->code) {
+        if (strval($_GET['to']) == $currency->code) {
             $to_currency_exist = true;
         }
-        if (strval($from_currency_exist) == $currency->code) {
+        if (strval($_GET['from']) == $currency->code) {
             $from_currency_exist = true;
         }
-        if (($to_currency_exist == false) || ($from_currency_exist == false)) {
-            displayError($error_code = 1200, $error_message = "Currency type not recognized-n", $format = $_GET['format']);
-            exit();
-        }
+    }
+    if (($to_currency_exist == false) || ($from_currency_exist == false)) {
+        displayError($error_code = 1200, $error_message = "Currency type not recognized", $format = $_GET['format']);
+        exit();
+    }
+
+    # ensure that amount is decimal number
+    if (is_numeric($_GET['amount']) && strpos($_GET['amount'], '.') !== true) {
+        displayError($error_code = 1300, $error_message = "Currency amount must be a decimal number", $format = $_GET['format']);
+        exit();
+    }
+
+    # ensure correct format
+    if (!isset($_GET['format']) || empty($_GET['format'])) {
+        $_GET['format'] = 'xml';
+    } else if ($_GET['format'] != "xml" || $_GET['format'] != "json") {
+        displayError($error_code = 1400, $error_message = "Format must be xml or json", $format = "xml");
+        exit();
     }
 }
