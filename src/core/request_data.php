@@ -13,36 +13,13 @@ function callAPI($end_point)
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
     $response = curl_exec($ch);
     curl_close($ch);
+    json_decode($response, true);
 
-    return $response;
-}
-
-function generateXMLFile($rates_data, $currencies_data)
-{
-    $dom = new DOMDocument("1.0", "UTF-8");
-    $root = $dom->createElement("rates");
-    $dom->appendChild($root);
-    $root->setAttribute("last_updated_at", $rates_data["meta"]["last_updated_at"]);
-    $root->setAttribute("base", "GBP");
-
-    foreach ($rates_data["data"] as $code => $rate_info) {
-        $currency_element = $dom->createElement("currency");
-        $currency_element->appendChild($dom->createElement("code", $code));
-        $currency_element->setAttribute("rate", $rate_info["value"]);
-
-        if (isset($currencies_data["data"][$code])) {
-            $details = $currencies_data["data"][$code];
-            $countries_string = implode(", ", $details["countries"]);
-            $currency_element->appendChild($dom->createElement("curr", $details["name"]));
-            $currency_element->appendChild($dom->createElement("loc", $countries_string));
-        }
-
-        $root->appendChild($currency_element);
+    if ($response === false) {
+        displayError($error_code = 1500, $error_message = "Error in Service", $format = $_GET['format']);
     }
 
-    // Save the XML to a file or return as a string
-    $dom->save("src/data/output.xml"); // to save
-    // return $dom->saveXML(); // to return as string
+    return $response;
 }
 
 

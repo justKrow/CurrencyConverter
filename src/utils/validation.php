@@ -1,5 +1,13 @@
 <?php
 
+function displayError($error_code, $error_message, $format)
+{
+    if ($format == "xml") {
+        displayXmlError($error_code, $error_message);
+    } else if ($format == "json") {
+        displayJsonError($error_code, $error_message);
+    }
+}
 function displayXmlError($error_code, $error_message)
 {
     header('Content-Type: application/xml');
