@@ -1,10 +1,8 @@
 <?php
 
-function callAPI($end_point)
+function callAPI($end_point, ?string $attribute)
 {
-    $base_url = "https://api.currencyapi.com/";
-    $url = $base_url . $end_point;
-
+    $url = BASE_URL . $end_point . API_KEY . $attribute;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_HEADER, 0);

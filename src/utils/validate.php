@@ -1,6 +1,14 @@
 <?php
 function validateParam()
 {
+    # ensure correct format
+    if (!isset($_GET['format']) || empty($_GET['format'])) {
+        $_GET['format'] = 'xml';
+    } else if ($_GET['format'] !== "xml" && $_GET['format'] !== "json") {
+        displayError($error_code = 1400, $error_message = "Format must be xml or json", $format = "xml");
+        exit();
+    }
+
     # ensure PARAM values match the keys in $GET
     if (count(array_intersect(PARAMS, array_keys($_GET))) < 4) {
         displayError($error_code = 1000, $error_message = "Required parameter is missing", $format = $_GET['format']);
@@ -30,17 +38,9 @@ function validateParam()
         exit();
     }
 
-    # ensure that amount is decimal number
-    if (is_numeric($_GET['amount']) && strpos($_GET['amount'], '.') !== true) {
-        displayError($error_code = 1300, $error_message = "Currency amount must be a decimal number", $format = $_GET['format']);
-        exit();
-    }
-
-    # ensure correct format
-    if (!isset($_GET['format']) || empty($_GET['format'])) {
-        $_GET['format'] = 'xml';
-    } else if ($_GET['format'] != "xml" || $_GET['format'] != "json") {
-        displayError($error_code = 1400, $error_message = "Format must be xml or json", $format = "xml");
+    # ensure that amnt is decimal number
+    if (!is_numeric($_GET['amnt']) || strpos($_GET['amnt'], '.') === false) {
+        displayError($error_code = 1300, $error_message = "Currency amnt must be a decimal number", $format = $_GET['format']);
         exit();
     }
 }
