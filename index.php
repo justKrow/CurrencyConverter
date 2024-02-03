@@ -5,24 +5,16 @@ include("src/core/convert.php");
 include("src/utils/validate.php");
 include("src/utils/validation.php");
 include("src/utils/xml_tweaks.php");
-include("src/utils/constants.php");
+include("src/utils/responses.php");
+include_once("src/data/config.php");
 
 @date_default_timezone_set("GMT");
 
 define('PARAMS', array('to', 'from', 'amnt', 'format'));
 
-validateParam();
+writeXmlRates();
 
-$rates_file_path = "src/data/rates.xml";
-
-if (!file_exists($rates_file_path)) {
-    $rates_data = callAPI($end_point = "v3/latest?apikey=", $attribute = "&base_currency=GBP");
-    $currencies_data = callAPI($end_point = "v3/currencies?apikey=", $base_currency = null);
-
-    $transformed_data = transformData($rates_data, $currencies_data);
-    createXML($transformed_data, $rates_data["meta"], $rates_file_path);
-}
+checkConvertParameters();
 
 $curreny_exchange_details = calculate();
-displayConvertXmlResult($curreny_exchange_details);
-// print_r($curreny_exchange_details);
+displayConvertResult($curreny_exchange_details, $format = $_GET["format"]);

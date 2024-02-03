@@ -2,13 +2,14 @@
 
 function calculate()
 {
-    $xml = simplexml_load_file("src/data/rates.xml");
+    $xml = simplexml_load_file(RATES_XML_FILE);
     $from_currency = searchCurrency($_GET["from"]);
     $to_currency = searchCurrency($_GET["to"]);
 
-    if (isRateOutDated($from_currency, date("Y-m-d H:i:s"))) {
-
+    if (isRateOutDated($xml["ts"], date("Y-m-d H:i:s"))) {
+        writeXmlRates();
     }
+
 
     $from_currency_details = [
         "code" => strval($from_currency->code),
@@ -29,7 +30,7 @@ function calculate()
     $to_currency_details["amnt"] = $exchange_rate * $from_currency_details["amnt"];
 
     $convert_details = [
-        "at" => formatDate(date("Y-m-d H:i:s")),
+        "at" => formatDate($xml["ts"]),
         "rate" => $exchange_rate,
         "from" => $from_currency_details,
         "to" => $to_currency_details,

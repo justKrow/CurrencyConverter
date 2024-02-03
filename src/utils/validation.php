@@ -1,14 +1,14 @@
 <?php
 
-function displayError($error_code, $error_message, $format)
+function displayError($error_code, $format)
 {
     if ($format == "xml") {
-        displayXmlError($error_code, $error_message);
+        displayXmlError($error_code);
     } else if ($format == "json") {
-        displayJsonError($error_code, $error_message);
+        displayJsonError($error_code);
     }
 }
-function displayXmlError($error_code, $error_message)
+function displayXmlError($error_code)
 {
     header('Content-Type: application/xml');
     $dom = new DOMDocument();
@@ -19,17 +19,17 @@ function displayXmlError($error_code, $error_message)
     $response->appendChild($error);
 
     $error->appendChild($dom->createElement('code', $error_code));
-    $error->appendChild($dom->createElement('message', $error_message));
+    $error->appendChild($dom->createElement('message', ERROR_CODES[$error_code]));
 
     echo $dom->saveXML();
 }
 
-function displayJsonError($error_code, $error_message)
+function displayJsonError($error_code)
 {
     header('Content-Type: application/json');
     $error_array = [
         'error' => $error_code,
-        'message' => $error_message
+        'message' => ERROR_CODES[$error_code],
     ];
     echo json_encode($error_array);
 }

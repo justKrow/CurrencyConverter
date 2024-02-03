@@ -18,22 +18,17 @@ function formatDate($date)
 
 function isRateOutDated($currency, $current_time)
 {
+    $xml = simplexml_load_file("src/data/rates.xml");
     $current_time = new DateTime($current_time);
-    $last_updated_time = new DateTime($currency["last_updated_at"]);
+    $last_updated_time = new DateTime($xml["ts"]);
 
     $interval = $current_time->diff($last_updated_time);
     $hours = $interval->h;
     $hours = $hours + ($interval->days * 24);
 
-    if ($hours > 12) {
+    if ($hours > 2) {
         return true;
     }
 
     return false;
-}
-
-function updateRate($currency)
-{
-    $currency = searchCurrency($currency);
-    $response = callAPI($end_point = "v3/latest?apikey=", $attribute = "&currencies[]=" . $currency->code);
 }

@@ -1,4 +1,5 @@
 <?php
+include("src/data/config.php");
 
 function callAPI($end_point, ?string $attribute)
 {
@@ -15,7 +16,7 @@ function callAPI($end_point, ?string $attribute)
     $response = json_decode($response, true);
 
     if ($response === false) {
-        displayError($error_code = 1500, $error_message = "Error in Service", $format = $_GET['format']);
+        displayError($error_code = 1500, $format = $_GET['format']);
     }
     return $response;
 }
