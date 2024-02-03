@@ -8,6 +8,8 @@ function searchCurrency($query)
             return $currency;
         }
     }
+    displayError($error_code = "2200", $format = $_GET["format"]);
+    exit();
 }
 
 function formatDate($date)

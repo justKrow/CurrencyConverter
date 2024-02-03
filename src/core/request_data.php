@@ -17,6 +17,7 @@ function callAPI($end_point, ?string $attribute)
 
     if ($response === false) {
         displayError($error_code = 1500, $format = $_GET['format']);
+        exit();
     }
     return $response;
 }
