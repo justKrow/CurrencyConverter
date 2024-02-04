@@ -6,7 +6,7 @@ include("src/utils/validate.php");
 include("src/utils/validation.php");
 include("src/utils/xml_tweaks.php");
 include("src/utils/responses.php");
-include_once("src/data/config.php");
+include("src/data/config.php");
 
 @date_default_timezone_set("GMT");
 
@@ -25,4 +25,3 @@ checkConvertParameters();
 
 $curreny_exchange_details = calculate();
 displayConvertResult($curreny_exchange_details, $format = $_GET["format"]);
-writeXmlRates();

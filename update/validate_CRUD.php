@@ -2,15 +2,15 @@
 
 function checkCrudParameters()
 {
-    checkFormat();
-    checkCrudParameterMatchUp();
-    checkAction();
-    checkCurrencyCode();
+    // checkFormat();
+    // checkAction();
+    // checkCrudParameterMatchUp();
+    // checkCurrencyCode();
 }
 
 function checkCrudParameterMatchUp()
 {
-    if (count(array_intersect(PARAMS, array_keys($_GET))) < 2) {
+    if (count(array_intersect(PARAMS_CRUD, array_keys($_GET))) < 3) {
         displayError($error_code = 1000, $format = $_GET['format']);
         exit();
     } else if (count($_GET) < 3) {
@@ -26,6 +26,10 @@ function checkAction()
         displayError($error_code = 2000, $format = $_GET["format"]);
         exit();
     }
+    if (in_array($_GET["action"], CRUD_OPTIONS) == false) {
+        displayError($error_code = 2000, $format = $_GET["format"]);
+        exit();
+    }
 }
 
 function checkCurrencyCode()
@@ -34,7 +38,10 @@ function checkCurrencyCode()
         displayError($error_code = 2100, $format = $_GET["format"]);
         exit();
     }
-
+    if (in_array($_GET["cur"], $GLOBALS['live_countries']) == false) {
+        displayError($error_code = 2200, $format = $_GET["format"]);
+        exit();
+    }
 }
 
 function checkEmptyRate($currency_code)

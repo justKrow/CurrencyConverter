@@ -9,7 +9,7 @@ function searchCurrency($query)
         }
     }
     displayError($error_code = "2200", $format = $_GET["format"]);
-    exit();
+    return false;
 }
 
 function formatDate($date)

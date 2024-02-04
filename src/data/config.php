@@ -27,3 +27,9 @@ define(
 
 # path for rates.xml
 define("RATES_XML_FILE", "src/data/rates.xml");
+
+# CRUD options
+define("CRUD_OPTIONS", array('post', 'put', 'del'));
+# parameter for CRUD
+define('PARAMS', array('to', 'from', 'amnt', 'format'));
+define('PARAMS_CRUD', array('cur', 'action', 'format'));

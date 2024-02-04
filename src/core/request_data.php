@@ -1,5 +1,4 @@
 <?php
-include("src/data/config.php");
 
 function callAPI($end_point, ?string $attribute)
 {
