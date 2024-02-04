@@ -51,19 +51,21 @@ function displayConvertJsonResult($curreny_exchange_details)
 {
     header("Content-type: application/json");
     $response = [
-        "at" => $curreny_exchange_details["at"],
-        "rate" => $curreny_exchange_details["rate"],
-        "from" => [
-            "code" => $curreny_exchange_details["from"]["code"],
-            "curr" => $curreny_exchange_details["from"]["curr"],
-            "loc" => $curreny_exchange_details["from"]["loc"],
-            "amnt" => $curreny_exchange_details["from"]["amnt"],
-        ],
-        "to" => [
-            "code" => $curreny_exchange_details["to"]["code"],
-            "curr" => $curreny_exchange_details["to"]["curr"],
-            "loc" => $curreny_exchange_details["to"]["loc"],
-            "amnt" => $curreny_exchange_details["to"]["amnt"],
+        "conv" => [
+            "at" => $curreny_exchange_details["at"],
+            "rate" => $curreny_exchange_details["rate"],
+            "from" => [
+                "code" => $curreny_exchange_details["from"]["code"],
+                "curr" => $curreny_exchange_details["from"]["curr"],
+                "loc" => $curreny_exchange_details["from"]["loc"],
+                "amnt" => $curreny_exchange_details["from"]["amnt"],
+            ],
+            "to" => [
+                "code" => $curreny_exchange_details["to"]["code"],
+                "curr" => $curreny_exchange_details["to"]["curr"],
+                "loc" => $curreny_exchange_details["to"]["loc"],
+                "amnt" => $curreny_exchange_details["to"]["amnt"],
+            ]
         ]
     ];
 

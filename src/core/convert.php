@@ -7,7 +7,7 @@ function calculate()
     $to_currency = searchCurrency(strtoupper($_GET["to"]));
 
     if (isRateOutDated($xml["ts"], date("Y-m-d H:i:s"))) {
-        writeXmlRates();
+        writeXmlRates("src/data/rates.xml");
     }
 
 

@@ -10,17 +10,18 @@ include("../src/core/generate_rates_XML.php");
 
 @date_default_timezone_set("GMT");
 
-checkCrudParameters();
+// checkCrudParameters();
 
-switch ($_SERVER["REQUEST_METHOD"]) {
-    case "POST":
-        handlePostRequest($_GET["cur"], 1, "/var/www/html/CurrencyConverter/src/data/rates.xml");
-        break;
-    case "PUT":
-        handlePutRequest();
-        print "Put";
-        break;
-    case "DELETE":
-        handleDeleteRequest();
-        print "delete";
-}
+// switch ($_SERVER["REQUEST_METHOD"]) {
+//     case "POST":
+//         handlePostRequest($_GET["cur"], 1, "/var/www/html/CurrencyConverter/src/data/rates.xml");
+//         break;
+//     case "PUT":
+//         handlePutRequest();
+//         print "Put";
+//         break;
+//     case "DELETE":
+//         handleDeleteRequest();
+//         print "delete";
+// }
+handlePostRequest("MMK", "../src/data/rates.xml");

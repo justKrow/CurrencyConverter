@@ -1,16 +1,18 @@
 <?php
 
-function searchCurrency($query)
+function searchCurrency($query, $xml_file_path)
 {
-    $xml = simplexml_load_file("src/data/rates.xml");
+    $xml = simplexml_load_file($xml_file_path);
     foreach ($xml->Currency as $currency) {
         if ($currency->code == $query) {
+            // Return the currency node
             return $currency;
         }
     }
     displayError($error_code = "2200", $format = $_GET["format"]);
     return false;
 }
+
 
 function formatDate($date)
 {
@@ -28,7 +30,7 @@ function isRateOutDated($currency, $current_time)
     $hours = $interval->h;
     $hours = $hours + ($interval->days * 24);
 
-    if ($hours > 2) {
+    if ($hours > 12) {
         return true;
     }
 

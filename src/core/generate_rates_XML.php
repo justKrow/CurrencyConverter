@@ -1,12 +1,12 @@
 <?php
 
-function writeXmlRates()
+function writeXmlRates($output_file)
 {
     $rates_data = callAPI($end_point = "v3/latest?apikey=", $attribute = "&base_currency=GBP");
     $currencies_data = callAPI($end_point = "v3/currencies?apikey=", $attribute = null);
 
     $transformed_data = transformData($rates_data, $currencies_data);
-    createXML($transformed_data, $rates_data["meta"]["last_updated_at"]);
+    createXML($transformed_data, $rates_data["meta"]["last_updated_at"], $output_file);
 }
 
 function transformData($rates_data, $currencies_data)
@@ -24,7 +24,7 @@ function transformData($rates_data, $currencies_data)
     return $transformed_data;
 }
 
-function createXML($transformed_data, $meta)
+function createXML($transformed_data, $meta, $output_file)
 {
     $dom = new DOMDocument("1.0", "UTF-8");
     $root = $dom->createElement("rates");
@@ -47,6 +47,6 @@ function createXML($transformed_data, $meta)
         $root->appendChild($currency_element);
     }
 
-    $dom->save(RATES_XML_FILE);
+    $dom->save($output_file);
 }
 

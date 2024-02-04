@@ -6,22 +6,20 @@ include("src/utils/validate.php");
 include("src/utils/validation.php");
 include("src/utils/xml_tweaks.php");
 include("src/utils/responses.php");
-include("src/data/config.php");
+include_once("src/data/config.php");
 
 @date_default_timezone_set("GMT");
 
-define('PARAMS', array('to', 'from', 'amnt', 'format'));
+checkConvertParameters();
 
 if (!file_exists(RATES_XML_FILE)) {
     try {
-        writeXmlRates();
+        writeXmlRates(RATES_XML_FILE);
     } catch (Exception $e) {
         displayError($error_code = 1500, $format = $_GET["format"]);
         exit();
     }
 }
-
-checkConvertParameters();
 
 $curreny_exchange_details = calculate();
 displayConvertResult($curreny_exchange_details, $format = $_GET["format"]);
