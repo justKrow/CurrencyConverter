@@ -3,8 +3,8 @@
 function calculate()
 {
     $xml = simplexml_load_file(RATES_XML_FILE);
-    $from_currency = searchCurrency(strtoupper($_GET["from"]));
-    $to_currency = searchCurrency(strtoupper($_GET["to"]));
+    $from_currency = searchCurrency(strtoupper($_GET["from"]), RATES_XML_FILE);
+    $to_currency = searchCurrency(strtoupper($_GET["to"]), RATES_XML_FILE);
 
     if (isRateOutDated($xml["ts"], date("Y-m-d H:i:s"))) {
         writeXmlRates("src/data/rates.xml");

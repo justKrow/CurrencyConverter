@@ -21,5 +21,9 @@ if (!file_exists(RATES_XML_FILE)) {
     }
 }
 
+if (isRateOutDated("GBP", date("Y-m-d H:i:s"))) {
+    writeXmlRates(RATES_XML_FILE);
+}
+
 $curreny_exchange_details = calculate();
 displayConvertResult($curreny_exchange_details, $format = $_GET["format"]);

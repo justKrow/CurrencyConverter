@@ -1,5 +1,6 @@
 <?php
-include("crud_functions.php");
+include("post/post_handling.php");
+include("post/post_response.php");
 include("validate_CRUD.php");
 include("../src/utils/validate.php");
 include("../src/data/config.php");
@@ -24,4 +25,4 @@ include("../src/core/generate_rates_XML.php");
 //         handleDeleteRequest();
 //         print "delete";
 // }
-handlePostRequest("MMK", "../src/data/rates.xml");
+handlePostRequest("JPY", "../src/data/rates.xml");

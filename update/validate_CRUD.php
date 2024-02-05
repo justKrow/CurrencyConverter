@@ -46,7 +46,7 @@ function checkCurrencyCode()
 
 function checkEmptyRate($currency_code)
 {
-    $currency = searchCurrency($currency_code);
+    $currency = searchCurrency($currency_code, "../src/data/rates.xml");
     if ($currency["rate"] === "") {
         displayError("2300", $format = $_GET["format"]);
         exit();
