@@ -34,12 +34,8 @@ function checkAction()
 
 function checkCurrencyCode()
 {
-    if ((!ctype_alpha($_GET["cur"])) || (strlen($_GET["cur"]) != 3)) {
+    if ((!ctype_alpha($_GET["cur"])) || (strlen($_GET["cur"]) != 3) || (!isset($_GET["action"]))) {
         displayError($error_code = 2100, $format = $_GET["format"]);
-        exit();
-    }
-    if (in_array($_GET["cur"], $GLOBALS['live_countries']) == false) {
-        displayError($error_code = 2200, $format = $_GET["format"]);
         exit();
     }
 }

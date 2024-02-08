@@ -31,5 +31,5 @@ function displayJsonError($error_code)
         'error' => $error_code,
         'message' => ERROR_CODES[$error_code],
     ];
-    echo json_encode($error_array);
+    echo json_encode($error_array, JSON_PRETTY_PRINT);
 }

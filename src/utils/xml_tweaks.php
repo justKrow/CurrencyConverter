@@ -20,9 +20,9 @@ function formatDate($date)
     return ($date->format('M d, Y h:i A'));
 }
 
-function isRateOutDated($currency, $current_time)
+function isRateOutDated($currency, $current_time, $xml_file_path)
 {
-    $xml = simplexml_load_file("src/data/rates.xml");
+    $xml = simplexml_load_file($xml_file_path);
     $current_time = new DateTime($current_time);
     $last_updated_time = new DateTime($xml["ts"]);
 

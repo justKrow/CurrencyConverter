@@ -6,8 +6,8 @@ function calculate()
     $from_currency = searchCurrency(strtoupper($_GET["from"]), RATES_XML_FILE);
     $to_currency = searchCurrency(strtoupper($_GET["to"]), RATES_XML_FILE);
 
-    if (isRateOutDated($xml["ts"], date("Y-m-d H:i:s"))) {
-        writeXmlRates("src/data/rates.xml");
+    if (isRateOutDated($xml["ts"], date("Y-m-d H:i:s"), RATES_XML_FILE)) {
+        writeXmlRates(RATES_XML_FILE);
     }
 
 

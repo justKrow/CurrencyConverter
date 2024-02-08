@@ -12,16 +12,16 @@ include_once("src/data/config.php");
 
 checkConvertParameters();
 
-if (!file_exists(RATES_XML_FILE)) {
+if (!file_exists("src/data/rates.xml")) {
     try {
-        writeXmlRates(RATES_XML_FILE);
+        writeXmlRates("src/data/rates.xml");
     } catch (Exception $e) {
         displayError($error_code = 1500, $format = $_GET["format"]);
         exit();
     }
 }
 
-if (isRateOutDated("GBP", date("Y-m-d H:i:s"))) {
+if (isRateOutDated("GBP", date("Y-m-d H:i:s"), RATES_XML_FILE)) {
     writeXmlRates(RATES_XML_FILE);
 }
 

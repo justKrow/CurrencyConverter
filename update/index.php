@@ -1,6 +1,9 @@
 <?php
 include("post/post_handling.php");
 include("post/post_response.php");
+include("put/put_handling.php");
+include("put/put_response.php");
+include("delete/delete_handling.php");
 include("validate_CRUD.php");
 include("../src/utils/validate.php");
 include("../src/data/config.php");
@@ -11,6 +14,8 @@ include("../src/core/generate_rates_XML.php");
 
 @date_default_timezone_set("GMT");
 
+
+// checkFormat();
 // checkCrudParameters();
 
 // switch ($_SERVER["REQUEST_METHOD"]) {
@@ -25,4 +30,6 @@ include("../src/core/generate_rates_XML.php");
 //         handleDeleteRequest();
 //         print "delete";
 // }
-handlePostRequest("JPY", "../src/data/rates.xml");
+// handleDeleteRequest("GBP");
+$timestamp = handlePostRequest($_GET["cur"], "../src/data/rates.xml");
+respondPostResquest($timestamp);

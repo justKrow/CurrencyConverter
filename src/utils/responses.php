@@ -69,5 +69,5 @@ function displayConvertJsonResult($curreny_exchange_details)
         ]
     ];
 
-    echo json_encode($response);
+    echo json_encode($response, JSON_PRETTY_PRINT);
 }

@@ -33,4 +33,5 @@ function handlePostRequest($currency_code, $xml_file_path)
         $GLOBALS['live_countries'][] = $currency_code;
     }
     $dom->save($xml_file_path);
+    return formatDate(date("Y-m-d H:i:s"));
 }
