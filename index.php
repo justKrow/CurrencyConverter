@@ -21,8 +21,8 @@ if (!file_exists("src/data/rates.xml")) {
     }
 }
 
-if (isRateOutDated("GBP", date("Y-m-d H:i:s"), RATES_XML_FILE)) {
-    writeXmlRates(RATES_XML_FILE);
+if (isRateOutDated("GBP", date("Y-m-d H:i:s"), "src/data/rates.xml", 12)) {
+    writeXmlRates("src/data/rates.xml");
 }
 
 $curreny_exchange_details = calculate();

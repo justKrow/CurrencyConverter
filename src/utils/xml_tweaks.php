@@ -5,7 +5,6 @@ function searchCurrency($query, $xml_file_path)
     $xml = simplexml_load_file($xml_file_path);
     foreach ($xml->Currency as $currency) {
         if ($currency->code == $query) {
-            // Return the currency node
             return $currency;
         }
     }
@@ -14,13 +13,14 @@ function searchCurrency($query, $xml_file_path)
 }
 
 
+
 function formatDate($date)
 {
     $date = new DateTime($date);
     return ($date->format('M d, Y h:i A'));
 }
 
-function isRateOutDated($currency, $current_time, $xml_file_path)
+function isRateOutDated($currency, $current_time, $xml_file_path, $interval_hours)
 {
     $xml = simplexml_load_file($xml_file_path);
     $current_time = new DateTime($current_time);
@@ -30,7 +30,7 @@ function isRateOutDated($currency, $current_time, $xml_file_path)
     $hours = $interval->h;
     $hours = $hours + ($interval->days * 24);
 
-    if ($hours > 12) {
+    if ($hours > $interval_hours) {
         return true;
     }
 

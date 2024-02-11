@@ -2,10 +2,10 @@
 
 function checkCrudParameters()
 {
-    // checkFormat();
-    // checkAction();
-    // checkCrudParameterMatchUp();
-    // checkCurrencyCode();
+    checkFormat();
+    checkAction();
+    checkCrudParameterMatchUp();
+    checkCurrencyCode();
 }
 
 function checkCrudParameterMatchUp()

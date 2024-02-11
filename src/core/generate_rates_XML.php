@@ -6,7 +6,7 @@ function writeXmlRates($output_file)
     $currencies_data = callAPI($end_point = "v3/currencies?apikey=", $attribute = null);
 
     $transformed_data = transformData($rates_data, $currencies_data);
-    createXML($transformed_data, $rates_data["meta"]["last_updated_at"], $output_file);
+    createXML($transformed_data, $output_file);
 }
 
 function transformData($rates_data, $currencies_data)
@@ -24,19 +24,24 @@ function transformData($rates_data, $currencies_data)
     return $transformed_data;
 }
 
-function createXML($transformed_data, $meta, $output_file)
+function createXML($transformed_data, $output_file)
 {
+    if (file_exists('live_countries.json')) {
+        $live_countries = json_decode(file_get_contents('src/data/live_countries.json'), true);
+    } else {
+        $live_countries = [];
+    }
     $dom = new DOMDocument("1.0", "UTF-8");
     $root = $dom->createElement("rates");
     $dom->appendChild($root);
-    $root->setAttribute("ts", $meta);
+    $root->setAttribute("ts", date("Y-m-d H:i:s"));
     $root->setAttribute("base", "GBP");
 
     foreach ($transformed_data as $currency) {
         $currency_element = $dom->createElement("Currency");
         $currency_element->appendChild($dom->createElement("code", $currency["code"]));
         $currency_element->setAttribute("rate", $currency["rate"]);
-        if (in_array($currency["code"], $GLOBALS['live_countries'])) {
+        if (in_array($currency["code"], $live_countries)) {
             $currency_element->setAttribute('live', 1);
         } else {
             $currency_element->setAttribute('live', 0);

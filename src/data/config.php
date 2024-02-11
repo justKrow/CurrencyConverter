@@ -3,9 +3,6 @@
 define("BASE_URL", "https://api.currencyapi.com/");
 define("API_KEY", "cur_live_HFBzAC5K8BiW2Zfcfp6NbwU1auQCayMQDvQlqIos");
 
-# live countries
-$GLOBALS['live_countries'] = array("AUD", "BRL", "CAD", "CHF", "CNY", "DKK", "EUR", "GBP", "HKD", "HUF", "INR", "JPY", "MXN", "MYR", "NOK", "NZD", "PHP", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR");
-
 # error codes
 define(
     "ERROR_CODES",
@@ -25,8 +22,6 @@ define(
     )
 );
 
-# path for rates.xml
-define("RATES_XML_FILE", "src/data/rates.xml");
 
 # CRUD options
 define("CRUD_OPTIONS", array('post', 'put', 'del'));

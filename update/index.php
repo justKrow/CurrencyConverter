@@ -4,10 +4,11 @@ include("post/post_response.php");
 include("put/put_handling.php");
 include("put/put_response.php");
 include("delete/delete_handling.php");
+include("delete/delete_reponse.php");
 include("validate_CRUD.php");
 include("../src/utils/validate.php");
 include("../src/data/config.php");
-include_once("../src/utils/validation.php");
+include("../src/utils/validation.php");
 include("../src/utils/xml_tweaks.php");
 include("../src/core/request_data.php");
 include("../src/core/generate_rates_XML.php");
@@ -15,7 +16,10 @@ include("../src/core/generate_rates_XML.php");
 @date_default_timezone_set("GMT");
 
 
-// checkFormat();
+checkFormat();
+$_GET["action"] = "post";
+
+// writeXmlRates("../src/data/rates.xml");
 // checkCrudParameters();
 
 // switch ($_SERVER["REQUEST_METHOD"]) {
@@ -30,6 +34,10 @@ include("../src/core/generate_rates_XML.php");
 //         handleDeleteRequest();
 //         print "delete";
 // }
-// handleDeleteRequest("GBP");
-$timestamp = handlePostRequest($_GET["cur"], "../src/data/rates.xml");
-respondPostResquest($timestamp);
+// $currency_history = handlePutRequest();
+// respondPutRequest($currency_history);
+// print_r($GLOBALS['live_countries']);
+handleDelRequest("MMK", "../src/data/rates.xml");
+// responseDeleteRequest();
+// $GLOBALS['live_countries'][] = "MMK";
+// print_r($GLOBALS['live_countries']);

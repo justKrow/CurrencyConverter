@@ -1,25 +1,25 @@
 <?php
 
-function respondPostResquest($timestamp)
+function respondPostResquest()
 {
     if ($_GET["format"] == "xml") {
-        respondPostXmlRequest($timestamp);
+        respondPostXmlRequest();
     } else if ($_GET["format"] == "json") {
-        respondPostJsonRequest($timestamp);
+        respondPostJsonRequest();
     }
 }
 
-function respondPostXmlRequest($timestamp)
+function respondPostXmlRequest()
 {
-    $currency = searchCurrency($_GET["cur"], "../src/data/rates.xml");
     header("Content-Type: application/xml");
+    $currency = searchCurrency($_GET["cur"], "../src/data/rates.xml");
     $dom = new DOMDocument();
 
     $action = $dom->createElement("action");
     $action->setAttribute("type", $_GET["action"]);
     $dom->appendChild($action);
 
-    $at = $dom->createElement("at", strval($timestamp));
+    $at = $dom->createElement("at");
     $action->appendChild($at);
 
     $rate = $dom->createElement("rate", strval($currency["rate"]));
@@ -38,14 +38,14 @@ function respondPostXmlRequest($timestamp)
     echo $dom->saveXML();
 }
 
-function respondPostJsonRequest($timestamp)
+function respondPostJsonRequest()
 {
     $currency = searchCurrency($_GET["cur"], "../src/data/rates.xml");
     header("Content-Type: application/json");
     $response = [
         "action" => [
             "type" => $_GET["action"],
-            "at" => $timestamp,
+            "at" => formatDate(date("Y-m-d H:i:s")),
             "rate" => strval($currency["rate"]),
             "curr" => [
                 "code" => strval($currency->code),
