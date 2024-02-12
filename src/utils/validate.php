@@ -31,7 +31,8 @@ function checkParameterMatchUp()
 
 function checkCurrencyLive()
 {
-    if ((in_array(strtoupper($_GET["from"]), $GLOBALS['live_countries']) == false) || (in_array(strtoupper($_GET["to"]), $GLOBALS['live_countries']) == false)) {
+    $live_countries = json_decode(file_get_contents('src/data/live_countries.json'), true);
+    if ((in_array(strtoupper($_GET["from"]), $live_countries) == false) || (in_array(strtoupper($_GET["to"]), $live_countries) == false)) {
         displayError($error_code = 1200, $format = $_GET['format']);
         exit();
     }

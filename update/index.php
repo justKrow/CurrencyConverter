@@ -15,29 +15,33 @@ include("../src/core/generate_rates_XML.php");
 
 @date_default_timezone_set("GMT");
 
+checkCrudParameters();
 
-checkFormat();
-$_GET["action"] = "post";
+if (!file_exists("../src/data/rates.xml")) {
+    try {
+        writeXmlRates("../src/data/rates.xml");
+    } catch (Exception $e) {
+        displayError($error_code = 1500, $format = $_GET["format"]);
+        exit();
+    }
+}
 
-// writeXmlRates("../src/data/rates.xml");
-// checkCrudParameters();
+if (isRateOutDated("GBP", date("Y-m-d H:i:s"), "src/data/rates.xml", 2)) {
+    writeXmlRates("../src/data/rates.xml");
+}
 
-// switch ($_SERVER["REQUEST_METHOD"]) {
-//     case "POST":
-//         handlePostRequest($_GET["cur"], 1, "/var/www/html/CurrencyConverter/src/data/rates.xml");
-//         break;
-//     case "PUT":
-//         handlePutRequest();
-//         print "Put";
-//         break;
-//     case "DELETE":
-//         handleDeleteRequest();
-//         print "delete";
-// }
-// $currency_history = handlePutRequest();
-// respondPutRequest($currency_history);
-// print_r($GLOBALS['live_countries']);
-handleDelRequest("MMK", "../src/data/rates.xml");
-// responseDeleteRequest();
-// $GLOBALS['live_countries'][] = "MMK";
-// print_r($GLOBALS['live_countries']);
+switch ($_SERVER["REQUEST_METHOD"]) {
+    case "POST":
+        if (handlePostRequest("../src/data/rates.xml")) {
+            respondPostResquest();
+        }
+        break;
+    case "PUT":
+        $currency_history = handlePutRequest();
+        respondPutRequest($currency_history);
+        break;
+    case "DELETE":
+        if (handleDelRequest("../src/data/rates.xml")) {
+            responseDeleteRequest();
+        }
+}

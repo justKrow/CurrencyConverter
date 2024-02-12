@@ -12,8 +12,6 @@ function searchCurrency($query, $xml_file_path)
     return false;
 }
 
-
-
 function formatDate($date)
 {
     $date = new DateTime($date);

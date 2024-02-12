@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rates ts="2024-02-11 14:24:40" base="GBP">
+<rates ts="2024-02-11 22:46:20" base="GBP">
     <Currency rate="2.2919125954" live="0">
         <code>ADA</code>
         <curr>Cardano</curr>
@@ -811,7 +811,7 @@
         <curr>Ugandan Shilling</curr>
         <loc>UG</loc>
     </Currency>
-    <Currency rate="1.2631523624" live="1">
+    <Currency rate="1.2631523624" live="0">
         <code>USD</code>
         <curr>US Dollar</curr>
         <loc>AC, AS, BQ, DG, EC, FM, GU, HT, IO, MH, MP, PA, PR, PW, SV, TC, TL, UM, US, VG, VI, ZW</loc>

@@ -1,6 +1,6 @@
 <?php
 
-function handlePostRequest($currency_code, $xml_file_path)
+function handlePostRequest($xml_file_path)
 {
     try {
         $dom = new DOMDocument();
@@ -8,7 +8,7 @@ function handlePostRequest($currency_code, $xml_file_path)
         $xpath = new DOMXPath($dom);
 
         // Check if the currency already exists
-        $query = sprintf("//Currency[code='%s']", $currency_code);
+        $query = sprintf("//Currency[code='%s']", $_GET["cur"]);
         $entries = $xpath->query($query);
 
         if ($entries->length > 0) {
@@ -18,8 +18,8 @@ function handlePostRequest($currency_code, $xml_file_path)
             }
         } else {
             // Currency doesn't exist, create a new element
-            $rates_data = callAPI($end_point = "v3/latest?apikey=", $attribute = "&base_currency=GBP&currencies[]=" . $currency_code);
-            $currencies_data = callAPI($end_point = "v3/currencies?apikey=", $attribute = "&currencies[]=" . $currency_code);
+            $rates_data = callAPI($end_point = "v3/latest?apikey=", $attribute = "&base_currency=GBP&currencies[]=" . $_GET["cur"]);
+            $currencies_data = callAPI($end_point = "v3/currencies?apikey=", $attribute = "&currencies[]=" . $_GET["cur"]);
             $transformed_data = transformData($rates_data, $currencies_data);
 
             $currency = $dom->createElement("Currency");
@@ -33,13 +33,14 @@ function handlePostRequest($currency_code, $xml_file_path)
             $dom->documentElement->appendChild($currency);
         }
         #add to live_countries.json
-        if (file_exists('../src/data/live_countries.json')) {
-            $live_countries = json_decode(file_get_contents('../src/data/live_countries.json'), true);
-        } else {
-            $live_countries = [];
+        $live_countries = json_decode(file_get_contents('../src/data/live_countries.json'), true);
+
+        // Check if the currency code is not already in the array
+        if (!in_array($_GET["cur"], $live_countries)) {
+            // Add the new currency code
+            $live_countries[] = $_GET["cur"];
         }
-        $live_countries[] = $currency_code;
-        $live_countries[] = array_unique($live_countries);
+
         file_put_contents('../src/data/live_countries.json', json_encode($live_countries, JSON_PRETTY_PRINT));
         $dom->save($xml_file_path);
         return true;

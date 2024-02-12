@@ -1,6 +1,6 @@
 <?php
 
-function handleDelRequest($currency_code, $xml_file_path)
+function handleDelRequest($xml_file_path)
 {
     try {
         if (file_exists('../src/data/live_countries.json')) {
@@ -9,12 +9,12 @@ function handleDelRequest($currency_code, $xml_file_path)
             $live_countries = [];
         }
 
-        if ($currency_code === "GBP") {
+        if ($_GET["cur"] === "GBP") {
             displayError($error_code = 2400, $format = $_GET["format"]);
             exit();
         }
 
-        if (in_array($currency_code, $live_countries) == false) {
+        if (in_array($_GET["cur"], $live_countries) == false) {
             displayError($error_code = 2200, $format = $_GET["format"]);
             exit();
         }
@@ -24,7 +24,7 @@ function handleDelRequest($currency_code, $xml_file_path)
         $xpath = new DOMXPath($dom);
 
         // Check if the currency already exists
-        $query = sprintf("//Currency[code='%s']", $currency_code);
+        $query = sprintf("//Currency[code='%s']", $_GET["cur"]);
         $entries = $xpath->query($query);
 
         if ($entries->length > 0) {
@@ -32,9 +32,10 @@ function handleDelRequest($currency_code, $xml_file_path)
             foreach ($entries as $entry) {
                 $entry->setAttribute('live', 0);
             }
-            $live_countries = array_filter($live_countries, static function ($element) use ($currency_code) {
-                return $element !== $currency_code;
-            });
+            if (($key = array_search($_GET["cur"], $live_countries)) !== false) {
+                unset($live_countries[$key]);
+            }
+            $live_countries = array_values($live_countries);
             file_put_contents('../src/data/live_countries.json', json_encode($live_countries, JSON_PRETTY_PRINT));
         } else {
             displayError($error_code = 1200, $format = $_GET["format"]);

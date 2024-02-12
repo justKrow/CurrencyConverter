@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <h3 class="title">Form interface for POST, PUT & DELETE</h3>
+    <form id="crudForm">
+      <input type="radio" id="post" name="action" value="POST" checked />
+      <label for="post">POST</label>
+      <input type="radio" id="put" name="action" value="PUT" />
+      <label for="put">PUT</label>
+      <input type="radio" id="delete" name="action" value="DELETE" />
+      <label for="delete">DELETE</label><br /><br />
+
+      <label for="currency">Currency:</label>
+      <select id="currency" name="cur">
+        <!-- Options will be populated by JavaScript --></select
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <textarea id="responseOutput" rows="10" cols="50"></textarea>
+
+    <script src="public/app.js"></script>
+  </body>
+</html>
