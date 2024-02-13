@@ -1,11 +1,15 @@
+/* Set margin for body and html elements */
 body,
 html {
-  margin: 100;
-}
-.title {
-  color: red;
+  margin: 100; /* Note: The margin value should have a unit, e.g., pixels (px), percentage (%), etc. */
 }
 
+/* Style for the title element */
+.title {
+  color: red; /* Set text color to red */
+}
+
+/* Style for the responseOutput element */
 #responseOutput {
-  margin-top: 20px;
+  margin-top: 20px; /* Add margin on top */
 }

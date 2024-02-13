@@ -1,73 +1,88 @@
 <?php
 
-function displayConvertResult($curreny_exchange_details, $format)
+// Function to display currency conversion result
+function displayConvertResult($currency_exchange_details, $format)
 {
+    // Check the format and call appropriate function
     if ($format == "xml") {
-        displayConvertXmlResult($curreny_exchange_details);
+        displayConvertXmlResult($currency_exchange_details);
     }
     if ($format == "json") {
-        displayConvertJsonResult($curreny_exchange_details);
+        displayConvertJsonResult($currency_exchange_details);
     }
 }
 
-function displayConvertXmlResult($curreny_exchange_details)
+// Function to display currency conversion result in XML format
+function displayConvertXmlResult($currency_exchange_details)
 {
+    // Set header for XML content
     header("Content-Type: application/xml");
+
+    // Create a new DOMDocument
     $dom = new DOMDocument();
 
+    // Create root element 'conv'
     $conv = $dom->createElement("conv");
     $dom->appendChild($conv);
-    $at = $dom->createElement("at", $curreny_exchange_details["at"]);
+
+    // Append 'at' element
+    $at = $dom->createElement("at", $currency_exchange_details["at"]);
     $conv->appendChild($at);
-    $rate = $dom->createElement("rate", $curreny_exchange_details["rate"]);
+
+    // Append 'rate' element
+    $rate = $dom->createElement("rate", $currency_exchange_details["rate"]);
     $conv->appendChild($rate);
 
+    // Append 'from' element
     $from = $dom->createElement("from");
     $conv->appendChild($from);
-    $code = $dom->createElement("code", $curreny_exchange_details["from"]["code"]);
-    $from->appendChild($code);
-    $curr = $dom->createElement("curr", $curreny_exchange_details["from"]["curr"]);
-    $from->appendChild($curr);
-    $loc = $dom->createElement("loc", $curreny_exchange_details["from"]["loc"]);
-    $from->appendChild($loc);
-    $amnt = $dom->createElement("amnt", strval($curreny_exchange_details["from"]["amnt"]));
-    $from->appendChild($amnt);
 
+    // Append elements inside 'from'
+    $from->appendChild($dom->createElement("code", $currency_exchange_details["from"]["code"]));
+    $from->appendChild($dom->createElement("curr", $currency_exchange_details["from"]["curr"]));
+    $from->appendChild($dom->createElement("loc", $currency_exchange_details["from"]["loc"]));
+    $from->appendChild($dom->createElement("amnt", strval($currency_exchange_details["from"]["amnt"])));
+
+    // Append 'to' element
     $to = $dom->createElement("to");
     $conv->appendChild($to);
-    $code = $dom->createElement("code", $curreny_exchange_details["to"]["code"]);
-    $to->appendChild($code);
-    $curr = $dom->createElement("curr", $curreny_exchange_details["to"]["curr"]);
-    $to->appendChild($curr);
-    $loc = $dom->createElement("loc", $curreny_exchange_details["to"]["loc"]);
-    $to->appendChild($loc);
-    $amnt = $dom->createElement("amnt", $curreny_exchange_details["to"]["amnt"]);
-    $to->appendChild($amnt);
 
+    // Append elements inside 'to'
+    $to->appendChild($dom->createElement("code", $currency_exchange_details["to"]["code"]));
+    $to->appendChild($dom->createElement("curr", $currency_exchange_details["to"]["curr"]));
+    $to->appendChild($dom->createElement("loc", $currency_exchange_details["to"]["loc"]));
+    $to->appendChild($dom->createElement("amnt", $currency_exchange_details["to"]["amnt"]));
+
+    // Output XML
     echo $dom->saveXML();
 }
 
-function displayConvertJsonResult($curreny_exchange_details)
+// Function to display currency conversion result in JSON format
+function displayConvertJsonResult($currency_exchange_details)
 {
+    // Set header for JSON content
     header("Content-type: application/json");
+
+    // Prepare response array
     $response = [
         "conv" => [
-            "at" => $curreny_exchange_details["at"],
-            "rate" => $curreny_exchange_details["rate"],
+            "at" => $currency_exchange_details["at"],
+            "rate" => $currency_exchange_details["rate"],
             "from" => [
-                "code" => $curreny_exchange_details["from"]["code"],
-                "curr" => $curreny_exchange_details["from"]["curr"],
-                "loc" => $curreny_exchange_details["from"]["loc"],
-                "amnt" => $curreny_exchange_details["from"]["amnt"],
+                "code" => $currency_exchange_details["from"]["code"],
+                "curr" => $currency_exchange_details["from"]["curr"],
+                "loc" => $currency_exchange_details["from"]["loc"],
+                "amnt" => $currency_exchange_details["from"]["amnt"],
             ],
             "to" => [
-                "code" => $curreny_exchange_details["to"]["code"],
-                "curr" => $curreny_exchange_details["to"]["curr"],
-                "loc" => $curreny_exchange_details["to"]["loc"],
-                "amnt" => $curreny_exchange_details["to"]["amnt"],
+                "code" => $currency_exchange_details["to"]["code"],
+                "curr" => $currency_exchange_details["to"]["curr"],
+                "loc" => $currency_exchange_details["to"]["loc"],
+                "amnt" => $currency_exchange_details["to"]["amnt"],
             ]
         ]
     ];
 
+    // Output JSON with pretty printing
     echo json_encode($response, JSON_PRETTY_PRINT);
 }
