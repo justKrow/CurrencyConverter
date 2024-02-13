@@ -26,7 +26,7 @@ function transformData($rates_data, $currencies_data)
 
 function createXML($transformed_data, $output_file)
 {
-    if (file_exists('live_countries.json')) {
+    if (file_exists('src/data/live_countries.json')) {
         $live_countries = json_decode(file_get_contents('src/data/live_countries.json'), true);
     } else {
         $live_countries = [];
