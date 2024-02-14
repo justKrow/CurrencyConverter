@@ -28,7 +28,7 @@ if (!file_exists("src/data/rates.xml")) {
 }
 
 // Check if GBP rate is outdated and regenerate rates XML if necessary
-if (isRateOutDated("GBP", date("Y-m-d H:i:s"), "src/data/rates.xml", 12)) {
+if (isRateOutDated("GBP", date("Y-m-d H:i:s"), "src/data/rates.xml")) {
     writeXmlRates("src/data/rates.xml");
 }
 

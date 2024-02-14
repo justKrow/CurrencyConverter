@@ -30,7 +30,7 @@ function handlePutRequest()
         ];
 
         // Check if the currency rate is outdated
-        if (isRateOutDated($_GET["cur"], date("Y-m-d H:i:s"), "../src/data/rates.xml", 2)) {
+        if (isRateOutDated($_GET["cur"], date("Y-m-d H:i:s"), "../src/data/rates.xml")) {
             // Write updated rates to XML file if outdated
             writeXmlRates("../src/data/rates.xml");
             // Search for the currency again after updating rates

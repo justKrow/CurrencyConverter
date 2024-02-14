@@ -31,11 +31,6 @@ if (!file_exists("../src/data/rates.xml")) {
     }
 }
 
-// Check if GBP rate is outdated, if yes, update rates XML
-if (isRateOutDated("GBP", date("Y-m-d H:i:s"), "src/data/rates.xml", 2)) {
-    writeXmlRates("../src/data/rates.xml");
-}
-
 // Handle different HTTP request methods
 switch ($_SERVER["REQUEST_METHOD"]) {
     case "POST":
@@ -57,5 +52,4 @@ switch ($_SERVER["REQUEST_METHOD"]) {
             // Respond to DELETE request
             responseDeleteRequest();
         }
-        break;
 }
