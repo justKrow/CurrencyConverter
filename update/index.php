@@ -23,7 +23,7 @@ checkCrudParameters();
 // Check if rates XML file exists, if not, generate it
 if (!file_exists("../src/data/rates.xml")) {
     try {
-        writeXmlRates("../src/data/rates.xml");
+        writeXmlRates("../src/data/rates.xml", "../src/data/live_countries.json");
     } catch (Exception $e) {
         // Handle errors
         displayError($error_code = 1500, $format = $_GET["format"]);

@@ -30,7 +30,7 @@ function formatDate($date)
 }
 
 // Function to check if currency rate is outdated
-function isRateOutDated($currency, $current_time, $xml_file_path)
+function isRateOutDated($current_time, $xml_file_path)
 {
     // Load XML file
     $xml = simplexml_load_file($xml_file_path);
@@ -43,9 +43,8 @@ function isRateOutDated($currency, $current_time, $xml_file_path)
     $interval = $current_time->diff($last_updated_time);
     $hours = $interval->h;
     $hours = $hours + ($interval->days * 24);
-
     // If the difference in hours exceeds the interval, return true (rate is outdated)
-    if ($hours > 2) {
+    if ($hours >= 0) {
         return true;
     }
 

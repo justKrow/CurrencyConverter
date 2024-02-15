@@ -19,7 +19,7 @@ checkConvertParameters();
 // If rates XML file doesn't exist, generate it
 if (!file_exists("src/data/rates.xml")) {
     try {
-        writeXmlRates("src/data/rates.xml");
+        writeXmlRates("src/data/rates.xml", "src/data/live_countries.json");
     } catch (Exception $e) {
         // Display error if XML file generation fails
         displayError($error_code = 1500, $format = $_GET["format"]);
@@ -28,8 +28,8 @@ if (!file_exists("src/data/rates.xml")) {
 }
 
 // Check if GBP rate is outdated and regenerate rates XML if necessary
-if (isRateOutDated("GBP", date("Y-m-d H:i:s"), "src/data/rates.xml")) {
-    writeXmlRates("src/data/rates.xml");
+if (isRateOutDated(date("Y-m-d H:i:s"), "src/data/rates.xml")) {
+    writeXmlRates("src/data/rates.xml", "src/data/live_countries.json");
 }
 
 // Calculate currency exchange details

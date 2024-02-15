@@ -11,8 +11,8 @@ function calculate()
     $to_currency = searchCurrency(strtoupper($_GET["to"]), "src/data/rates.xml");
 
     // Check if the currency rates are outdated and update them if necessary
-    if (isRateOutDated($xml["ts"], date("Y-m-d H:i:s"), "src/data/rates.xml")) {
-        writeXmlRates("src/data/rates.xml");
+    if (isRateOutDated(date("Y-m-d H:i:s"), "src/data/rates.xml")) {
+        writeXmlRates("src/data/rates.xml", "src/data/live_countries.json");
     }
 
     // Prepare details of the 'from' currency

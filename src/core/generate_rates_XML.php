@@ -1,7 +1,7 @@
 <?php
 
 // Function to write currency rates to an XML file
-function writeXmlRates($output_file)
+function writeXmlRates($rates_output_file, $live_countries_file)
 {
     // Call API to get rates and currencies data
     $rates_data = callAPI($end_point = "v3/latest?apikey=", $attribute = "&base_currency=GBP");
@@ -11,7 +11,7 @@ function writeXmlRates($output_file)
     $transformed_data = transformData($rates_data, $currencies_data);
 
     // Create XML file with transformed data
-    createXML($transformed_data, $output_file);
+    createXML($transformed_data, $rates_output_file, $live_countries_file);
 }
 
 // Function to transform rates and currencies data
@@ -31,11 +31,11 @@ function transformData($rates_data, $currencies_data)
 }
 
 // Function to create XML file
-function createXML($transformed_data, $output_file)
+function createXML($transformed_data, $rates_output_file, $live_countries_file)
 {
     // Load live countries data if available
-    if (file_exists('src/data/live_countries.json')) {
-        $live_countries = json_decode(file_get_contents('src/data/live_countries.json'), true);
+    if (file_exists($live_countries_file)) {
+        $live_countries = json_decode(file_get_contents($live_countries_file), true);
     } else {
         $live_countries = [];
     }
@@ -65,5 +65,5 @@ function createXML($transformed_data, $output_file)
     }
 
     // Save the XML file
-    $dom->save($output_file);
+    $dom->save($rates_output_file);
 }

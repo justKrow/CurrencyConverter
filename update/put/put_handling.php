@@ -30,18 +30,20 @@ function handlePutRequest()
         ];
 
         // Check if the currency rate is outdated
-        if (isRateOutDated($_GET["cur"], date("Y-m-d H:i:s"), "../src/data/rates.xml")) {
+        if (isRateOutDated(date("Y-m-d H:i:s"), "../src/data/rates.xml")) {
             // Write updated rates to XML file if outdated
-            writeXmlRates("../src/data/rates.xml");
+            writeXmlRates("../src/data/rates.xml", "../src/data/live_countries.json");
             // Search for the currency again after updating rates
             $currency = searchCurrency($_GET["cur"], "../src/data/rates.xml");
             // Add status and updated rate to currency history
-            $currency_history[] = ["status" => "outdated", "rate" => strval($currency["rate"])];
+            $currency_history["status"] = "outdated";
+            $currency_history["rate"] = strval($currency["rate"]);
         } else {
             // Add status indicating that rate was updated
-            $currency_history[] = ["status" => "updated"];
-        }
+            $currency_history["status"] = "updated";
+            $currency_history["rate"] = "already up to date";
 
+        }
         // Return currency history data
         return $currency_history;
     } catch (Exception $e) {

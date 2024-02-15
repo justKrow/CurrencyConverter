@@ -24,7 +24,7 @@ define(
 
 
 # CRUD options
-define("CRUD_OPTIONS", array('POST', 'PUT', 'DELETE'));
+define("CRUD_OPTIONS", array('post', 'put', 'del', 'POST', 'PUT', 'DELETE'));
 # parameter for CRUD
 define('PARAMS', array('to', 'from', 'amnt', 'format'));
 define('PARAMS_CRUD', array('cur', 'action', 'format'));

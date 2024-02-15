@@ -31,7 +31,7 @@ function respondPutXmlRequest($currency_history)
     if ($currency_history["status"] == "outdated") {
         $rate = $dom->createElement("rate", strval($currency_history["rate"])); // New rate if outdated
     } else {
-        $rate = $dom->createElement("rate", "already up to date"); // Indicate already up to date if not outdated
+        $rate = $dom->createElement("rate", strval($currency_history["rate"])); // Indicate already up to date if not outdated
     }
     $action->appendChild($rate);
 
