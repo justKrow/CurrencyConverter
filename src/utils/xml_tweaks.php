@@ -44,7 +44,7 @@ function isRateOutDated($current_time, $xml_file_path)
     $hours = $interval->h;
     $hours = $hours + ($interval->days * 24);
     // If the difference in hours exceeds the interval, return true (rate is outdated)
-    if ($hours >= 0) {
+    if ($hours > 2) {
         return true;
     }
 
