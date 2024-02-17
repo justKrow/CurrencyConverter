@@ -32,24 +32,18 @@ if (!file_exists("../src/data/rates.xml")) {
 }
 
 // Handle different HTTP request methods
-switch ($_SERVER["REQUEST_METHOD"]) {
-    case "POST":
-        // Handle POST request
-        if (handlePostRequest("../src/data/rates.xml")) {
-            // Respond to POST request
-            respondPostResquest();
-        }
-        break;
-    case "PUT":
-        // Handle PUT request
-        $currency_history = handlePutRequest();
-        // Respond to PUT request
-        respondPutRequest($currency_history);
-        break;
-    case "DELETE":
-        // Handle DELETE request
-        if (handleDelRequest("../src/data/rates.xml")) {
-            // Respond to DELETE request
-            responseDeleteRequest();
-        }
+if ($_SERVER["REQUEST_METHOD"] == "POST" || $_GET["action"] == "post") {
+    // Handle POST request
+    if (handlePostRequest("../src/data/rates.xml")) {
+        respondPostResquest();
+    }
+} else if ($_SERVER["REQUEST_METHOD"] == "PUT" || $_GET["action"] == "put") {
+    // Handle PUT request
+    $currency_history = handlePutRequest();
+    respondPutRequest($currency_history);
+} elseif ($_SERVER["REQUEST_METHOD"] == "DELETE" || $_GET["action"] == "del") {
+    // Handle DELETE request
+    if (handleDelRequest("../src/data/rates.xml")) {
+        responseDeleteRequest();
+    }
 }
